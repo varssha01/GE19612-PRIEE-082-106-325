@@ -1,0 +1,1782 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+     "responses": ["Hello,This is Agrobot!!! thanks for asking", "Hi there, I am AgroBot!! How can I help?"],
+     "context": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure"],
+     "context": [""]
+    },
+    {"tag": "noanswer",
+     "patterns": [],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+     "context": [""]
+    },
+   
+    
+
+    {"tag": "hours",
+    "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ,"opening hours","mudilabaa"],
+    "responses": ["We're open every day 9am-9pm."],
+    "context":[" hi"]
+    },
+    {"tag": "sell",
+     "patterns": ["how I can sell crops online?", "how I can sell my crops?", "best way to sell product?" , "how farmer can sell their product?"],
+     "responses": ["Please visit our website https://farmer.gov.in/"],
+      "context": [""]
+    },
+   {"tag": "opentoday",
+    "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
+    "responses": ["We're open every day from 9am-9pm.", "Our hours are 9am-9pm every day."]
+   },
+   {"tag": "family",
+    "patterns": ["Who is your father?", "What is your father's name?", "What is your mother's name?","Do you have parents?" ,"Do you have siblings?" ],
+    "responses": ["i don't have knowledge about my family."]
+   },
+   {"tag": "sarcasm",
+    "patterns": ["Are you a God?", "How old are you?", "Are you a man?","Are you a bot?", "Do you have a job?" ,"Who is your best friend?","Am I your friend?"],
+    "responses": ["i'm not able to understand your question.", "Please ask some related questions."]
+   },
+ 
+  
+   {"tag": "askinghelp",
+    "patterns": ["I need help!", "Need help!", "Help me please", "Help me", "Can you do something for me?", "Answer my question"],
+    "responses": ["i'm here to help you.", "i can help you.", "i'm here to solve your queries."]
+   },
+   {"tag": "outofscope",
+    "patterns": ["Who is the President?", "Who is the Prime Minister?", "What is my mother's name?", "Are you a supporter of BJP?", "Are you active in politics?"],
+    "responses": ["your question is out of my knowledge.", "i'm not able to answer your question.", "i don't have knowledge about that."]
+   },
+   {"tag": "cottonweather",
+    "patterns": ["which weather is suitable for cotton?", "what is temperature for cotton crop?", "cotton crop grows in which temperature?", "temprature for cotton ", "temperature require for cotton crop?"],
+    "responses": ["During active growth, the ideal air temperature is 70 to 100°F (21-37°C).", "ideal air temperature is 70 to 100°F.", "21-37°C temperature is required."]
+   },
+   {"tag": "cottoncondition",
+    "patterns": ["which condition is suitable for cotton crop?", "which condition required for cotton crop?", "condition for cotton crop", "condition suitable for cotton", "condition for more cotton crop production"],
+    "responses": ["It require a lot of heat and plenty of sunshine.", "It prefers warm and humid climate.","Cotton is a plant that needs a long frost-free period."]
+   },
+   {"tag": "wheatweather",
+    "patterns": ["which weather is suitable for wheat?", "what is temperature for wheat crop?", "wheat grows in which temperature?","temperature for wheat", "temperature require for wheat crop?"],
+    "responses": ["The optimum growing temperature is about 25°C.", "minimum and maximum growth temperatures of 3° to 4°C and 30° to 32°C, respectively."]
+   },
+   {"tag": "wheatcondition",
+    "patterns": ["which condition is suitable for wheat crop?", "which condition required for wheat crop?", "condition for wheat crop", "condition suitable for wheat", "condition for more wheat crop production", "which land is suitable for wheat crop"],
+    "responses": ["it needs 12 to 15 inches (31 to 38 centimeters) of water to produce a good crop.", "it needs a lot of sunshine, especially when the grains are filling.", "it grows best when the soil pH is between 6.0 and 7.0."]
+   },
+   {"tag": "bajraweather",
+    "patterns": ["which weather is suitable for bajra?", "what is temperature for bajra crop?", "bajra grows in which temperature?", "temperature for bajra", "temperature require for bajra crop?"],
+    "responses": ["Ideal temperature for bajra cultivation is between 20 oC to 30 oC.", "temperature is between 20 oC to 30 oC."]
+   },
+   {"tag": "bajracondition",
+    "patterns": ["which condition is suitable for bajra crop?", "which condition required for bajra crop?", "condition for bajra crop", "which land is suitable for bajra crop"],
+    "responses": ["Bajra grows well in dry and warm climate conditions", "it's drought tolerant crop which requires low annual rainfall ranging between 40 cm to 60 cm.", "i'm here to solve your queries."]
+   },
+   {"tag": "sugercaneweather",
+    "patterns": ["which weather is suitable for sugercane?", "what is temperature for sugercane crop?", "sugercane grows in which temperature?","temperature for sugercane"],
+    "responses": ["temperature is between 21°C to 27°C", "It grows well in hot and humid climate with a temperature of 21°C to 27°C "]
+   },
+   {"tag": "sugercanecondition",
+    "patterns": ["which condition is suitable for sugercane crop?", "which condition required for sugercane crop?", "condition for sugercane crop","condition suitable for sugercane"],
+    "responses": ["annual rainfall require between 75cm.", "It is a tropical as well as a subtropical crop.", "It grows well in hot and humid climate with a temperature of 21°C to 27°C"]
+   },
+   {"tag": "riceweather",
+    "patterns": ["which weather is suitable for rice?", "what is temperature for rice crop?", "rice grows in which temperature?","temperature for rice"],
+    "responses": ["The average temperature required throughout the life period of the crop ranges from 21 to 37º C.", "the average temperature is between 21 to 37ºC"]
+   },
+   {"tag": "ricecondition",
+    "patterns": ["which condition is suitable for rice crop?", "which condition required for rice crop?", "condition for rice crop","condition suitable for rice"],
+    "responses": ["Rice crop needs a hot and humid climate.","Rice grows on a variety of soils like silts, loams and gravels.", "It is best suited to regions which have high humidity, prolonged sunshine and an assured supply of water.", "The average temperature required throughout the life period of the crop ranges from 21 to 37º C."]
+   },
+   {"tag": "groundnutweather",
+    "patterns": ["which weather is suitable for groundnut?", "what is temperature for groundnut crop?", "groundnut grows in which temperature?","temperature for groundnut"],
+    "responses": ["It seems that plant will grow best when the mean temperature is from 21-26.5°C.", "It grows well with a temperature of 21°C to 26.5°C "]
+   },
+   {"tag": "groundnutcondition",
+    "patterns": ["which condition is suitable for groundnut crop?", "which condition required for groundnut crop?", "condition for groundnut crop","condition suitable for groundnut"],
+    "responses": ["it require well distributed rainfall at least 50 cm during growing season", "it grows in abundance of sunshine and relatively warm temperatures."]
+   },
+   {"tag": "marketprice",
+    "patterns": ["What is the market price of rice?", "How much is the cost of 10 kgs of wheat?", "What are the prices of sugarcane?"],
+    "responses": ["please visit our application.", "please visit our website for more detail.", "i request you to please visit our website."]
+   },
+   {"tag": "wassup",
+    "patterns": ["Wassup?", "What are you doing?", "What is up with you?", "What are you up to?", "How is it going?"],
+    "responses": ["i'm just chilling.", "i am enjoying day.", "i'm fine."]
+   },
+   {"tag": "maizeweather",
+    "patterns": ["what is temperature for maize crop?", "maize grows in which temperature?", "temperature for maize"],
+    "responses": ["A temperature of 21°C- 27°C and 50-100cm rainfall is suitable for its cultivation.", "A temperature of 21°C- 27°C is suitable for its cultivation."]
+   },
+   {"tag": "maizecondition",
+    "patterns": ["which condition is suitable for maize crop?", "which condition required for maize crop?", "condition suitable for maize", "land for maize crop"],
+    "responses": ["A temperature of 21°C- 27°C and 50-100cm rainfall is suitable for its cultivation.", "A 50-100cm rainfall is suitable for its cultivation.", "Alternate spells of rains and sunny weather are ideal for maize.", "It grows well in alluvial and red soils with good drainage."]
+   },
+   {"tag": "farmerscheme",
+    "patterns": ["Important government policies for farmer", "indian government scheme for indian farmer", "which scheme is most helpful to indian farmer"],
+    "responses": ["PM-Kisan Scheme,Pradhan Mantri Kisan Maandhan yojana,Pradhan Mantri Fasal Bima Yojana (PMFBY),Paramparagat Krishi Vikas Yojana (PKVY),etc.", "PM-Kisan Scheme,Pradhan Mantri Krishi Sinchai Yojana (PMKSY),etc.", "Pradhan Mantri Kisan Maandhan yojana, Pradhan Mantri Fasal Bima Yojana (PMFBY),etc. for more details please visit our website."]
+   },
+   {"tag": "farmerpmkisan",
+    "patterns": ["what is PM kisan scheme", "PM kisan", "which are benefits of PM kisan scheme?", "how PM kisan scheme is helpful to people?"],
+    "responses": ["Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) is a Central Sector scheme with 100% funding from Government of India. for more details visit pmkisan.gov.in", "please visit our website pmkisan.gov.in", "i request you to please visit our website pmkisan.gov.in", "Under the Scheme an income support of Rs. 6000/- per year is provided to all farmer families across the country in three equal installments of Rs. 2000/- each every four months."]
+   },
+   {"tag":"pulsescondition" ,
+   "patterns":["what is condition to grow pulses "],
+   "responses":["Pulses are a type of legume that includes crops such as lentils, chickpeas, beans, and peas."]
+   },
+   {"tag":"govntscheme",
+    "patterns": ["give me government scheme link","link for government scheme"],
+    "responses": ["Please visit our website ,Pradhan Mantri Fasal Bima Yojana: https://pmfby.gov.in/"]
+   },
+
+   {"tag":"advicepotatoes",
+    "patterns": ["What are some crop specific advice for growing potatoes?","advice for potato","how to grow potato","how to gro potato in house","potato advice","advice for potato"],
+    "responses": ["Plant potatoes in well-draining soil with plenty of organic matter.Hill soil around potato plants to encourage tuber formation and prevent greening."]
+   },
+   {"tag":"advicecucumbers",
+    "patterns": ["What are some crop specific advice for growing cucumbers?","advice for cucumber","how to grow cucumber","how to gro potato in cucumber","cucumber advice","advice for cucumber"],
+    "responses": ["Plant cucumbers in warm, fertile soil with good drainage. Train vines to climb a trellis or fence to save space and improve air circulation.."]
+   },
+   {"tag":"advicecarrots",
+    "patterns": ["What are some crop specific advice for growing carrots?","advice for carrot","how to grow carrot","how to grow carrot in house","carrot advice","advice for carrot"],
+    "responses": ["Plant carrots in loose, well-draining soil without any rocks or debris.Keep soil consistently moist during the germination period, then reduce watering once the plants are established."]
+   },
+   {"tag":"advicepeppers",
+    "patterns": ["What are some crop specific advice for growing peppers?","advice for peppers","how to grow peppers","how to grow peppers in house","peppers advice","advice for peppers"],
+    "responses": ["Plant peppers in well-draining soil in a warm, sunny location. Provide support for pepper plants as they grow and fertilize with a balanced fertilizer every few weeks."]
+   },
+   {"tag":"advicelettuce",
+    "patterns": ["What are some crop specific advice for growing lettuce?"," give advice for growing lettuce"],
+    "responses": ["Plant lettuce in rich, well-draining soil with plenty of nitrogen","HI"]
+   },
+   {"tag":"pest",
+    "patterns": ["pest control in crops"," give pest control in crops","pest control"],
+    "responses": ["Plant companion plants that repel pests, such as marigolds, garlic, and chives","HI"]
+   },
+   {"tag":"equipment",
+    "patterns": ["equipment recommendation for small crops"," give equipment recommendation for small crops"],
+    "responses": ["Hand tools,Garden tillers, Walk-behind tractors,Mini harvesters,Irrigation equipment","helloo"]
+   },
+   {"tag":"health",
+    "patterns": ["Why is soil health important?"," give soil health importance","impoetance of soil","importance of soil health"],
+    "responses": ["Soil health is important for several reasons. Healthy soil supports plant growth and crop yields, which are essential for food production.","helloo"]
+   },
+   {"tag":"healthsoil",
+    "patterns": ["How can I improve soil health?","improve soil health","health of the soil","how should i improve my soil"],
+    "responses": ["There are several ways to improve soil health, including adding organic matter such as compost or cover crops to the soil, reducing tillage, using crop rotations and intercropping, managing irrigation and fertilization, and avoiding the use of harmful pesticides and herbicides."]
+   },
+   {"tag":"healthindicator",
+    "patterns": ["What are some indicators of soil health","indicator of soil","soil indicator","indicator for soil"],
+    "responses": [" Indicators of soil health include measures of soil structure, such as soil aggregate stability and bulk density, soil fertility, such as nutrient content and pH, and measures of biological activity, such as microbial biomass and diversity."]
+   },
+   {"tag":"healthdegraded",
+    "patterns": ["Can soil health be restored after it has been degraded?","restore soil health","degraded of soil health"],
+    "responses": ["Yes, soil health can be restored after it has been degraded. However, the process can take time and may require changes in management practices such as reducing tillage, using cover crops, and avoiding harmful chemicals."]
+   },
+   {"tag":"soiltest",
+    "patterns": ["How can I test my soil health","soil test","test for soil","soil health test","soil health","health of the soil"],
+    "responses": ["There are several soil health tests available that can assess various aspects of soil health. Some examples include soil nutrient testing, soil organic matter testing, and microbial community analysis."]
+   },
+   {"tag":"improvesoil",
+    "patterns": ["What are some benefits of improving soil health","how can i improve my soil","benifits of improving soil health"],
+    "responses": ["Improving soil health can lead to several benefits, including increased crop yields, reduced erosion and runoff, improved water quality, enhanced biodiversity, and reduced greenhouse gas emissions. "]
+   },
+   {"tag":"soilimpact",
+    "patterns": ["Can soil health impact human health","how soil health is affect human health","bad soil can affect human","how humans are affected by soil"],
+    "responses": ["Yes, soil health can impact human health through the food we eat. Soil contaminated with harmful chemicals or heavy metals can lead to food contamination and potential health risks for humans who consume the contaminated food. Additionally, healthy soil can lead to healthier crops with higher nutrient content, which can benefit human health."]
+   },
+   {"tag":"community",
+    "patterns": ["Why is community engagement important for crops growing","community engagement","community engagement for soil growing"],
+    "responses": [" Community engagement is important for crops growing because it helps to ensure that the local community is involved in and supportive of the agricultural practices in the area. "]
+   },
+   {"tag":"farmerengage",
+    "patterns": ["farmers engage with the local community to promote their crops?","farmers local community","local community"],
+    "responses": ["Farmers can engage with the local community in a variety of ways, such as hosting farm tours or events, offering CSA (Community Supported Agriculture) shares, participating in local farmers markets, and working with local schools to promote agriculture education. "]
+   },
+   {"tag":"local",
+    "patterns": ["some benefits of locally grown crop","local crop"],
+    "responses": ["Locally-grown crops can provide a variety of benefits for the community, including fresher and more nutritious produce, reduced transportation emissions, support for the local economy, and increased community pride and engagement in agriculture."]
+   },
+   {"tag":"members",
+    "patterns": ["community members support local farmers","community memebers"],
+    "responses": ["Community members can support local farmers and agriculture by purchasing locally-grown produce, participating in CSA programs, attending farmers markets, and advocating for policies that support sustainable agriculture practices."]
+   },
+   {"tag":"agrilink",
+    "patterns": ["links for agriculture"],
+    "responses": ["U.S. Department of Agriculture: https://www.usda.gov/Food and Ariculture Organization of the United Nations: http://www.fao.org/home/en/National Institute of Food and Agriculture: https://nifa.usda.gov/Agricultural Marketing Service: https://www.ams.usda.gov/American Farm Bureau Federation: https://www.fb.org/Crop Science Society of America: https://www.crops.org/International Food Policy Research Institute: https://www.ifpri.org/Agriculture Network Information Center: https://www.agricultureinnovation.org/AgWeb: https://www.agweb.com/Modern Farmer: https://modernfarmer.com/"]
+   },
+   {"tag":"farmerlink",
+    "patterns": ["links for farmer"],
+    "responses": ["USDA Farm Service Agency: https://www.fsa.usda.gov/USDA Rural Development: https://www.rd.usda.gov/ Farm Aid: https://www.farmaid.org/National Sustainable Agriculture Coalition: https://sustainableagriculture.net/Farm Credit: https://www.farmcredit.com/American Farmland Trust: https://farmland.org/National Young Farmers Coalition: https://www.youngfarmers.org/Extension.org: https://extension.org/Rodale Institute: https://rodaleinstitute.org/National Farmers Union: https://www.nfu.org/"]
+   },
+   {"tag":"aqua",
+    "patterns": ["What is aquaponics","aquaponics"],
+    "responses": ["Aquaponics is a sustainable agricultural system that combines aquaculture (raising aquatic animals like fish) with hydroponics (growing plants in water). In an aquaponic system, the waste produced by the fish is broken down by bacteria into nutrients that can be absorbed by the plants, which in turn clean the water for the fish."]
+   },
+   {"tag":"aquainstall",
+    "patterns": ["Install aquaphonics","How can I install aquaphonics","How can I setup aquaphonics"],
+    "responses": ["Design your system,Gather materials,Build the system,Cycle the system,Add fish and plants,Monitor and maintain the system"]
+   },
+   {"tag":"aquathings",
+    "patterns": ["Things needed to install aquaphonics","how to do aquaphonics"],
+    "responses": ["1. Tank 2. Grow bed 3. Pump 4. Plumbing 5. Media 6. Plants 7. Water 8. Testing equipment"]
+   },
+   {"tag":"benifitsofauqa",
+    "patterns": ["Benefits if aquaphonics","What are the benifits of aquaphonics"],
+    "responses": ["1. Water efficiency 2. Space efficiency 3. Soil conservation 4. Organic produce 5. Reduced carbon footprint 6. Fish production"]
+   },
+   {"tag":"plantofaqua",
+    "patterns": ["Plants to grow in aquaphonics","tips for aquaphonic"],
+    "responses": ["vegetables, leafy greens, small root vegetables, fruiting plants, herbs,and flowers"]
+   },
+   {"tag":"aquagrowing",
+    "patterns": ["growing medium for aquaphonics","materials to grow aqaphonic"],
+    "responses": ["Clay pebbles, Light Expanded Clay Aggregate (LECA), perlite"]
+   },
+   {"tag":"hydrosetup",
+    "patterns": ["How to setup Hydrophonics","how to install hydrophonics","setup hydrophonic"],
+    "responses": ["Choose a growing method,Choose a location,Build or buy a hydroponic system,Set up a grow light,Choose your plants and growing medium,Mix nutrient solution,Plant your seeds or seedlings,Monitor and adjust"]
+   },
+   {"tag":"briefhydrosetup",
+    "patterns": ["give brief explanation setup Hydrophonics","berifly about hydrophonics"],
+    "responses": ["1. Choose a growing method: There are several types of hydroponic growing methods, such as deep water culture, nutrient film technique, and drip irrigation. choose the one the method. 2. Choose a location: Select a location that is flat, has access to electricity and water, and has good air circulation.3. Build or buy a hydroponic system: You can purchase a pre-made hydroponic system or build your own using materials such as PVC pipes, buckets, and tubing. Make sure to follow instructions closely and ensure that the system is properly sealed. 4. Set up a grow light: Depending on the location of your hydroponic system, you may need to provide additional lighting to supplement natural light. LED grow lights are a popular option for indoor hydroponic systems. 5. Choose your plants and growing medium: Choose plants that thrive in a hydroponic environment, such as lettuce, tomatoes, and herbs. Select a growing medium, such as rockwool, coconut coir, or perlite.6. Mix nutrient solution: Nutrient solutions provide essential minerals and nutrients to plants in a hydroponic system. 7. Plant your seeds or seedlings: Plant your seeds or seedlings in the growing medium,making sure they are properly spaced. 8. Monitor and adjust: Monitor the pH and nutrient levels of your hydroponic system regularly and adjust as needed to ensure that your plants are growing properly."]
+   },
+   {"tag":"plantsofhydrophonics",
+   "patterns": ["What are the Plants to grow in hydrophonics","plants for hydrophonics","hydrophonic plants"],
+   "responses": ["lettuce, tomatoes, herbs, Cucumbers, Strawberries, Peppers, Beans, Microgreens"]
+  },
+  {"tag":"nutrientsforhydro",
+   "patterns": ["Give nutrients for hydrophonics plants","nutrients of hydrophonic","nutrients for hydrophonic"],
+   "responses": ["1. Nitrogen (N): Nitrogen is essential for plant growth and is used to build proteins, nucleicacids, and chlorophyll.2. Phosphorus (P): Phosphorus is important for root development, energy transfer, and fruit and flower formation.3. Potassium (K): Potassium is important for water regulation, enzyme activation, and stress tolerance.4. Calcium (Ca): Calcium is important for cell wall development and strong stems.5. Magnesium (Mg): Magnesium is important for chlorophyll production and energy transfer.6. Sulfur (S): Sulfur is important for protein synthesis and plant metabolism.7. Iron (Fe): Iron is important for chlorophyll production and energy transfer.8. Manganese (Mn): Manganese is important for photosynthesis and enzyme activation.9. Zinc (Zn): Zinc is important for enzyme activation and growth hormone production.10. Copper (Cu): Copper is important for chlorophyll production and enzyme activation.11. Molybdenum (Mo): Molybdenum is important for nitrogen fixation and enzyme activation.12. Boron (B): Boron is important for cell wall development and fruit and seed development."]
+  },
+  {"tag":"brandsofhydrophonics",
+   "patterns": ["Give Brands of hydrophonics"],
+   "responses": ["1. General Hydroponics 2. Advanced Nutrients 3. Fox Farm 4. Botanicare 5. Dyna-Gro 6. Canna 7. Emerald Harvest 8. House and Garden 9. FloraFlex 10. Technaflora"]
+  },
+  {"tag":"websiteofhydrophonic",
+   "patterns": ["Website to find hydrophonics nutrients","websites for hydrophonics"],
+   "responses": ["1. Amazon: https://www.amazon.com/ 2. Hydroponics.com: https://hydroponics.com/  3. Hydrobuilder.com: https://hydrobuilder.com/  4. Growershouse.com: https://growershouse.com/ 5. Cropking.com: https://www.cropking.com/ 6. 420science.com: https://www.420science.com/ 7. Zenhydro.com: https://www.zenhydro.com/ 8. Trueleafmarket.com: https://www.trueleafmarket.com/ 9. Cultivatehydroponics.co.uk: https://cultivatehydroponics.co.uk/"]
+  },
+  {"tag":"needsforhydrophonics",
+   "patterns": ["Things needed for hydrophonics","materials to grow hydrophonic"],
+   "responses": ["1. Growing container 2. Growing medium  3. Nutrient solution 4. Water 5. Lighting 6. pH meter 7. Air pump and air stone 8. Seeds or plant"]
+  },
+  {"tag":"benifitsofhydrophonics",
+   "patterns": ["Benefits of hydrophonics","hydrophonic benifits"],
+   "responses": [" 80% less water is used (compared to growing these plants outside)  Preserves space  No runoff problems  Preserves nutrients"]
+  },
+  {"tag":"setupofaerophonics",
+   "patterns": ["Aerophonics setup","how to install aerophonics"],
+   "responses": ["1. Growing chamber: This is the area where the plants will be suspended and where the nutrient mist will be sprayed. It can be made of plastic, metal, or other materials. 2. Nutrient solution: Aeroponics plants receive their nutrients from a mist of water and  fertilizers. This solution needs to be well-balanced and pH-adjusted to ensure optimal  plant growth.  3. Water pump and misters: A water pump is needed to pump the nutrient solution to the misters, which then mist the plant roots. The misters need to be carefully placed toensure that all of the plant roots are receiving sufficient moisture and nutrients 4. Timer: Since aeroponics systems require misting at regular intervals, a timer is needed to automate the misting process. 5. Lighting: Aeroponic plants need light to grow, and in indoor aeroponic setups, this often  means artificial lighting such as LED or fluorescent bulbs. 6. Growing medium: While aeroponic plants do not grow in soil, a growing medium may be used to support the plant roots. Some examples include rockwool, foam cubes, or mesh pots.7. pH meter: Maintaining the correct pH level of the nutrient solution is crucial for plant growth, so a pH meter is necessary to monitor and adjust the pH as needed."]
+  },
+  {"tag":"plantwaste",
+   "patterns": ["How to manage plant waste","management of plant waste"],
+   "responses": ["1. Composting: Composting is a great way to turn plant waste into nutrient-rich soil for your garden. Composting involves breaking down plant matter, such as leaves, stems, and fruit and vegetable scraps, into a rich, dark compost that can be used to enrich soil and promote healthy plant growth. 2. Mulching: Mulching involves using plant waste, such as leaves or grass clippings, to cover the soil around your plants. Mulch helps to suppress weeds, retain moisture, and improve soil health by adding organic matter. 3. Recycling: Some plant waste, such as paper or cardboard, can be recycled rather than thrown away. Check with your local recycling program to see what types of plant waste can be recycled. 4. Burning: Burning plant waste is an option in some areas, but it should be done with caution to avoid air pollution and fire hazards. Always check with your local fire department and follow any regulations regarding burning plant waste."]
+  },
+  {"tag":"mordernagri",
+  "patterns": ["What are the Modern agriculture in India","mordern agri","morder agriculture"],
+  "responses": ["1. Precision agriculture 2. Vertical farming 3. Aquaponics 4. Controlled-environment agriculture 5. Conservation agriculture 6. Hydrophonics 7. aerophonics"]
+ },
+ {"tag":"improvemodernagri",
+  "patterns": ["how to improve efficiency in modern agriculture","improvement of mordern agriculture"],
+  "responses": ["1. Adopt precision agriculture 2. Use no-till farming 3. Use cover cropping 4. Adopt controlled 5. Use automation 6. Adopt sustainable farming practices"]
+ },
+ {"tag":"adoptagri",
+ "patterns": ["What is Adopt precision agriculture"],
+ "responses": ["Precision agriculture uses technology such as GPS, sensors, and drones to gather data on soil moisture, nutrient levels, and other factors. This information is then used to optimize planting, fertilizing, and irrigation, which can lead to higher yields and reduced waste."]
+},
+{"tag":"tillfarming",
+ "patterns": ["What is Use no-till farming","no till farming"],
+ "responses": ["No-till farming involves planting crops without tilling or plowing the soil, which helps to preserve soil structure and prevent erosion. Instead, a seed drill is used to plant crops directly into the soil, which saves time and fuel."]
+},
+{"tag":"covercrop",
+ "patterns": ["What is Use cover cropping","cover cropping"],
+ "responses": ["Cover cropping involves planting crops, such as clover or rye, in between main crops to protect the soil from erosion, improve soil health, and suppress weeds. This reduces the need for herbicides and can help reduce water usage."]
+},
+{"tag":"controlenvagri",
+ "patterns": ["What is Adopt controlled-environment agriculture","Adopt controlled-environment agriculture"],
+ "responses": ["Controlled-environment agriculture (CEA) involves growing crops in a controlled environment, such as a greenhouse or indoor facility. This allows for optimal growing conditions year-round, reduced water usage, and protection from pests and disease."]
+}
+,
+{"tag":"automation",
+ "patterns": ["What is Use automation","automation","what is mean by automation"],
+ "responses": ["Automation can help improve efficiency in modern agriculture by reducing the need for manual labor. For example, automated irrigation systems can adjust water usage based on soil moisture levels, while automated harvesting machines can improve efficiency during the harvest season."]
+},
+{"tag":"farmpractices",
+ "patterns": ["What is Adopt sustainable farming practices","farming practices","practices for farming"],
+ "responses": ["Sustainable farming practices, such as crop rotation, reduced tillage, and cover cropping, can help improve efficiency by reducing waste and preserving soil health. These practices can also lead to higher yields and reduce the need for chemical inputs."]
+},
+{"tag":"precisionagri",
+ "patterns": ["What is Precision agriculture","precision agriculture"],
+ "responses": ["Precision agriculture uses technology such as GPS, sensors, and drones to gather data on soil moisture, nutrient levels, and other factors. This information is used to optimize planting, fertilizing, and irrigation, which can lead to higher yields and reduced waste."]
+},
+{"tag":"vertifarm",
+ "patterns": ["What is Vertical farming","vertical farming"],
+ "responses": ["Vertical farming is a technique of growing crops indoors using artificial light and a controlled environment. This method allows for year-round crop production, efficient use of space, and reduced water usage."]
+},
+{"tag":"aquaphonic",
+ "patterns": ["What is Aquaponics","aquaponics"],
+ "responses": ["Aquaponics is a sustainable farming method that combines aquaculture (raising fish) with hydroponics (growing plants without soil). In this system, fish  waste provides nutrients for plants, while the plants filter the water for the fish."]
+},
+{"tag":"envagri",
+ "patterns": ["What is Controlled-environment agriculture"],
+ "responses": ["Controlled-environment agriculture (CEA) involves growing crops in a controlled environment, such as a greenhouse or indoor facility. This allows for optimal growing conditions year-round, reduced water usage, and protection from pests and disease."]
+},
+{"tag":"conservagri",
+"patterns": ["What is Conservation agriculture","how to conserve agriculture","conserve agriculture"],
+"responses": ["Conservation agriculture is a sustainable farming technique that emphasizes the preservation of soil health and biodiversity. This method involves reducing tillage, rotating crops, and using cover crops to protect the soil and reduce erosion."]
+},
+{"tag":"stepstocultivate",
+"patterns": ["Steps for beginners to cultivation","cultivation","how to do cultivation","cultivation for beginners"],
+"responses": ["1. Determine your farming goals 2. Learn the basics of farming 3. Choose the right location 4. Get the necessary permits and licenses 5. Determine your budget 6. Start small 7. Join local farming organizations 8. Be prepared for challenges"]
+},
+{"tag":"flowersinhouse",
+"patterns": ["Flower to plant at house","folwers in house","house flowers"],
+"responses": ["1. Holy basil 2. Snake Plant (Sansevieria) 3. Aloe Vera 4. ZZ Plant (Zamioculcas zamiifolia) 5. Spider Plant (Chlorophytum comosum 6. Areca Palm (Dypsis lutescens)"]
+},
+{"tag":"pestcontrol",
+"patterns": ["Pest control for flowering plants","pest for flowers"],
+"responses": ["1. insecticidal soap 2. Neem oil 3. Natural predators 4. Chemical pesticides"]
+},
+{"tag":"fruitsathome",
+"patterns": ["Pest control for flowering plants"],
+"responses": ["Papaya (Carica papaya) Banana (Musa spp.) Lemon (Citrus limon) Guava (Psidium guajava) Mango (Mangifera indica) "]
+},
+{"tag":"SoilInformation",
+"patterns": ["What's the ideal pH level for [crop] soil?","How can I test the soil fertility?","What nutrients are typically lacking in [crop] soil?","What are some common soil types found in [location]?","How can I improve the soil quality?"],
+"responses": ["The ideal pH level for [crop] soil is typically between [pH level 1] and [pH level 2].","Soil fertility can be tested through soil sampling and testing in a laboratory.","[Crop] soil is typically lacking in [list of nutrients].","Some common soil types found in [location] include [list of soil types]." ,"You can improve soil quality by [suggestion 1], [suggestion 2], [suggestion 3]. "]
+},
+{"tag":"croplInformation",
+"patterns": ["What crops are suitable for [location]?","How can I increase crop yield?","What's the best time to plant/harvest [crop]?", "How can I protect crops from pests/diseases?","What are some common farming techniques used for [crop]? "],
+"responses":["Some crops that are suitable for [location] include [list of crops].",
+"Crop yield can be increased by [suggestion 1], [suggestion 2], [suggestion 3].",
+"The best time to plant [crop] is typically [time period 1], while the best time to harvest it is [time period 2].",
+"To protect crops from pests/diseases, you can try [pest/disease control method 1], [pest/disease control method 2], [pest/disease control method 3].",
+"Some common farming techniques used for [crop] include [farming technique 1], [farming technique 2], [farming technique 3]."]
+},
+
+{"tag":"livestock",
+"patterns": ["What are some common breeds of [livestock]?",
+"How can I improve the health of my [livestock]?",
+"What should I feed [livestock]?",
+"What are some common diseases that affect [livestock]?",
+"How can I breed [livestock] for specific traits?"],
+"responses": ["Some common breeds of [livestock] include [list of breeds].",
+"To improve the health of your [livestock], you can try [suggestion 1], [suggestion 2], [suggestion 3].",
+"[Livestock] should be fed [list of nutrients] in their diet.",
+"[Livestock] can be affected by diseases such as [list of diseases].",
+"To breed [livestock] for specific traits, you can try [breeding technique 1], [breeding technique 2], [breeding technique 3]."]
+},
+{"tag":"IrrigationInformation",
+"patterns": ["How much water do crops need?",
+"What's the best time to water crops?",
+"How can I conserve water during irrigation?",
+"What are some efficient irrigation methods?",
+"How can I prevent soil erosion during irrigation?"],
+"responses": ["Crops typically need [amount] of water per week.",
+"The best time to water crops is typically [time period].",
+"To conserve water during irrigation, you can try [conservation method 1], [conservation "]
+},
+{"tag":"crop_management",
+"patterns": ["How often should I water my tomato plants?","water management for tomato","tomato water","water for tomato"],
+"responses": ["Tomatoes generally need to be watered about once a week. However, the frequency may vary depending on factors such as the soil type, temperature, and humidity. It's best to check the soil moisture level regularly and adjust watering accordingly"]
+},
+{"tag":"pest_contro",
+"patterns": ["How can I prevent aphids from attacking my plants?"],
+"responses": ["You can prevent aphids by using insecticidal soap or neem oil spray on the plants. You can also introduce beneficial insects such as ladybugs or lacewings that feed on aphids. Another effective method is to regularly prune and remove affected plant parts."]
+},
+{"tag":"fertilizer_application",
+"patterns": ["What type of fertilizer is best for growing vegetables?","fertilizer for vegetables"],
+"responses": ["A balanced fertilizer with equal amounts of nitrogen, phosphorus, and potassium is best for growing vegetables. You can also use organic fertilizers such as compost or manure. It's important to follow the instructions on the fertilizer package and not over-fertilize, as this can harm the plants."]
+},
+{"tag":"livestock_management",
+"patterns": ["How often should I deworm my sheep?"],
+"responses": ["It's recommended to deworm sheep every 3-6 months, depending on the age and health of the animals. You can consult with a veterinarian to determine the best deworming schedule for your sheep."]
+},
+{"tag":"harvesting",
+"patterns": ["When is the best time to harvest my apples?","harvest of apples","apple harvestment"],
+"responses": ["Apples are typically ready to harvest in late summer or early fall, depending on the variety. You can test the ripeness by gently twisting the apple and seeing if it comes off easily from the tree. Another method is to cut an apple open and check the seeds - if they are dark, the apple is likely ready to harvest."]
+},{"tag":"harvesting",
+"patterns": ["When is the best time to harvest my apples?"],
+"responses": ["Apples are typically ready to harvest in late summer or early fall, depending on the variety. You can test the ripeness by gently twisting the apple and seeing if it comes off easily from the tree. Another method is to cut an apple open and check the seeds - if they are dark, the apple is likely ready to harvest."]
+}
+,{"tag":"Cotton_cultivation",
+"patterns": ["how to cultivate cotton","cotton cultivation","cultivation for cotton"],
+"responses": ["Soil types: drained loamy soils with a neutral pH of 6.0 to 7.0,Climate: Cotton is a warm-season crop with temperature range of 21°C to 30°C.The crop requires plenty of sunshine and a moderate amount of rainfall during its growing period. Irrigation: Irrigation can be done through furrow, drip or sprinkler systems depending on the availability of water."]
+}
+,{"tag":"Cotton_variety",
+"patterns": ["what are the cooton variety","varieties of cotton","types of cotton"],
+"responses": ["Gossypium hirsutum: This is the most commonly grown species of cotton worldwide. Gossypium barbadense: This is a long-staple cotton variety and is known for its high-quality fibers.Gossypium arboreum: This is a native Indian cotton species and is commonly known as tree cotton. Hybrid cotton: Hybrid cotton varieties are created by crossing two different cotton varieties to produce plants with desirable traits such as higher yield, disease resistance, and improved fiber quality.Bt cotton: Bt cotton is a genetically modified cotton variety that produces a toxin that is toxic to certain pests, such as bollworms."]
+}
+,{"tag":"Cotton_import",
+"patterns": ["cotton import and export,trading,trade","cotton trade","cotton importing"],
+"responses": ["Cotton trade: The cotton trade is governed by various regulations and trade policies. The major cotton-exporting countries are the United States, Brazil, Australia, and India. The major cotton-importing countries are China, Bangladesh, Vietnam, and Turkey."]
+}
+,{"tag":"Cotton_process",
+"patterns": ["cotton processing","processing of cotton"],
+"responses": ["Ginning,Spinning,Weaving or Knitting,Dyeing and Printing,Finishing,Cutting and Sewing"]
+}
+,{"tag":"Cotton_ginning",
+"patterns": ["What is Ginning","ginning"],
+"responses": ["This is the process of separating the cotton fiber from the seed. Ginning machines use rotating saws or teeth to remove the fiber from the seed."]
+}
+,{"tag":"Cotton_spinning",
+"patterns": ["What is spinning","spinning"],
+"responses": ["After ginning, the cotton fibers are cleaned, carded, and spun into yarn. This process involves aligning the cotton fibers, removing any impurities, and twisting the fibers together to create yarn."]
+}
+,{"tag":"Cotton_knitting",
+"patterns": ["What is knitting","what is weaving"],
+"responses": ["The spun yarn is then used to create textiles through either weaving or knitting. In weaving, the yarn is woven into fabric on a loom. In knitting, the yarn is knitted together into a fabric."]
+}
+,{"tag":"Cotton_printing",
+"patterns": ["What is dyeing","what is printing"],
+"responses": ["The fabric is then dyed or printed to give it color or a specific design. This process involves treating the fabric with various chemicals or dyes to achieve the desired color or pattern."]
+}
+,{"tag":"Cotton_finishing",
+"patterns": ["What is finishing in cotton","cotton finishing","fining of cotton"],
+"responses": ["The finished fabric is then subjected to various finishing processes such as washing, ironing, and pressing to give it the desired texture and appearance."]
+}
+,{"tag":"Cotton_cut",
+"patterns": ["What is cutting","what s sewing"],
+"responses": ["Finally, the fabric is cut and sewn into various consumer goods such as clothing, bedding, and towels"]
+}
+,{"tag":"Cotton_water",
+"patterns": ["Give water level for cotton","water level for cotton","cotton water level"],
+"responses": ["The recommended water level for cotton cultivation is typically between 50 to 100 centimeters, but it can be adjusted based on local conditions and farming practices."]
+}
+,{"tag":"wheat_soil",
+"patterns": ["soil condition for wheat","wheat soil condition","what is soil condition for wheat"],
+"responses": ["Wheat prefers well-drained soils that are rich in organic matter. The soil should be tilled to a depth of 6-8 inches to create a good seedbed.The ideal soil pH for wheat cultivation is between 6.0 and 7.5."]
+}
+,{"tag":"wheat_ferti",
+"patterns": ["fertilizer for wheat","wheat fertilizer"],
+"responses": ["Nitrogen is the most important nutrient for wheat, and it should be applied in split applications, with around 30-40% applied at planting and the remainder applied in the spring before the crop reaches the jointing stage."]
+}
+,{"tag":"wheat_irri",
+"patterns": ["Give irrigation method for wheat","wheat irrigation","irrigation method for wheat"],
+"responses": ["Flood Irrigation,Sprinkler Irrigation,Drip Irrigation,Center Pivot Irrigation."]
+}
+,{"tag":"wheat_variety",
+"patterns": ["Give varieties of wheat","types of wheat"],
+"responses": [" 1.Soft Red Winter Wheat: This variety is used primarily for cake and pastry flour, as well as for animal feed. It has a lower protein content than hard red winter wheat." , "2.Durum Wheat: This variety is used primarily for making pasta and semolina flour. It has a high protein content." , "3.White Wheat: This variety has a milder flavor and lighter color than other types of wheat, and is often used for making baked goods such as cakes and cookies.", "4.Emmer Wheat: This variety is an ancient type of wheat that is high in fiber and protein. It is used primarily for animal feed, but has also gained popularity as a health food in recent years.","5.Spelt Wheat: This variety is also an ancient type of wheat that has gained popularity as a health food in recent years. It is high in fiber and protein, and is often used in baked goods and pasta."]
+}
+,{"tag":"wheat_process",
+"patterns": ["What are the process for wheat","wheat processing"],
+"responses": ["1.Harvesting: Wheat is typically harvested in late summer or early fall, when the grain is fully mature and the moisture content is low. The wheat can be harvested by hand or with machines such as combines.","2.Cleaning: After harvesting, the wheat must be cleaned to remove any foreign materials such as stones, dirt, and debris. This is typically done using a series of screens and air classifiers.","3.Milling: The cleaned wheat is then milled to produce flour. There are several different types of mills used for this process, including roller mills, hammer mills, and stone mills.", "4.Packaging: Once the flour is produced, it is typically packaged in bags or sacks for distribution to consumers or commercial users. The flour may be further processed into other products such as pasta, bread, or cereal."]
+}
+,{"tag":"wheat_benifits",
+"patterns": ["What are the benifits of consuming wheat","wheat consumers"],
+"responses": ["1.Improved Digestion","2.Lowered Risk of Heart Disease","3.Reduced Risk of Diabetes","4.Increased Energy ", "5.Improved Brain Function."]
+}
+,{"tag":"wheat_import",
+"patterns": ["what are the importing Countries of Wheat","importing countries of wheat"],
+"responses": ["Egypt,Indonesia,Bangladesh,Algeria,Japan,Nigeria,Philippines,Iraq,Morocco,Sudan"]
+}
+,{"tag":"wheat_export",
+"patterns": ["what are the Exporting Countries of Wheat","exporting countries of wheat"],
+"responses": ["Russia,Canada,UnitedStates,Australia,France,Ukraine,Argentina,Kazakhstan,Romania,Germany"]
+}
+,{"tag":"wheat_water",
+"patterns": ["Give Water level for Wheat"],
+"responses": ["The soil should be moist but not waterlogged, and the water level should be sufficient to keep the soil evenly moist. The water requirements also vary depending on the stage of growth, with more water needed during the early growth stages and less during the later stages."]
+}
+,{"tag":"wheat_irrigation",
+"patterns": ["what are the irrigation methods for Wheat?"],
+"responses": [	"Flood Irrigation: In this method, water is applied to the field through furrows or channels, allowing it to flow across the field. This method is most effective in areas with high soil permeability,Sprinkler Irrigation: This method involves the use of sprinklers to apply water to the field. The sprinklers can be either stationary or movable, and they distribute water evenly over the field. This method is suitable for both sandy and clay soils, Drip Irrigation: In this method, water is delivered directly to the roots of the plants through a network of tubes or pipes with small emitters. This method is most efficient in areas with low water availability, and it can also help to reduce water use and leaching of nutrients.,Center Pivot Irrigation:This method involves the use of a pivot system with sprinklers that move in a circular pattern around a center point, applying water evenly over the field. This method is most effective in large fields with uniform soil types."]
+}
+,{"tag":"carrot_soil",
+"patterns": ["soil condition for carrot","carrot soil condition"],
+"responses": [	"The soil should be loose and friable, with plenty of organic matter. "]
+}
+,{"tag":"carrot_weather",
+"patterns": ["weather condition for carrot","temperature for carrot"],
+"responses": [	" Carrots prefer cool weather, with temperatures ranging from 60-65°F (15-18°C) for seed germination and young seedling growth"]
+}
+,{"tag":"carrot_water",
+"patterns": ["water condition for carrot","carrot water condition"],
+"responses": [	" They require frequent, shallow watering to keep the soil moist but not waterlogged, and irrigation should be increased during hot and dry periods. "]
+}
+,{"tag":"carrot_fertilizer",
+"patterns": ["fertilizer for carrot","carrot fertilizer"],
+"responses": [	"Carrots are heavy feeders and require regular fertilization with nitrogen, phosphorus, and potassium, as well as micronutrients such as boron and magnesium. "]
+}
+,{"tag":"carrot_states",
+"patterns": ["carrot cultivation states","what are the places carrots are growing"],
+"responses": [	"Punjab,Haryana,Uttar Pradesh,Bihar,West Bengal,Gujarat,Maharashtra,Karnataka,TamilNadu,Kerala"]
+}
+,{"tag":"beans_soil",
+"patterns": ["soil condition for beans","beans soil condition"],
+"responses": [	"Beans grow well in well-drained, loamy soil with a pH range of 6.0-7.5. "]
+}
+,{"tag":"beans_weather",
+"patterns": ["weather condition for beans","beans weather condition"],
+"responses": ["Beans require warm weather with a temperature range of 20-30°C. The best time to grow beans is during the summer months when the weather is warm and sunny "]
+}
+,{"tag":"beans_temp",
+"patterns": ["temperature condition for beans","beans temperature condition","beans temperature"],
+"responses": ["Beans prefer temperatures between 18-27°C during the day and 13-18°C at night. High temperatures can cause poor growth, and low temperatures can cause poor germination."]
+}
+,{"tag":"beans_fertilizer",
+"patterns": ["Give fertilizer for beans","beans fertilizer"],
+"responses": ["Beans require nitrogen-rich fertilizer, especially during the early stages of growth. Too much nitrogen, however, can result in poor pod formation."]
+}
+,{"tag":"beans_varieties",
+"patterns": ["Give varieties of beans","types of beans","beans variets","beans types"],
+"responses": ["There are many different varieties of beans, including green beans, snap beans, wax beans, kidney beans, lima beans, and black beans. "]
+}
+,{"tag":"beans_water",
+"patterns": ["Water condition for beans","beans water condition"],
+"responses": ["Overwatering can lead to root rot and other diseases, while underwatering can result in stunted growth and reduced yields. In general, beans should be watered deeply once a week, or more frequently during hot and dry weather. It is important to avoid getting water on the leaves, as this can promote fungal diseases."]
+}
+,{"tag":"cabbage_soil",
+"patterns": ["Soil condition for cabbage","cabbage soil condition","soil for cabbage"],
+"responses": ["Cabbage prefers well-drained, fertile soils with a pH between 6.0 and 6.8"]
+}
+
+,{"tag":"cabbage_temp",
+"patterns": ["Temperature condition for cabbage","cabbage temperature","what is good temperature to grow cabbage","temperature for cabbage"],
+"responses": ["Cabbage grows best in cooler temperatures, ideally between 60 and 65°F (15-18°C). It is important to avoid extremes in temperature, as hot weather can cause the cabbage to bolt, while freezing temperatures can damage or kill the plants."]
+}
+,{"tag":"cabbage_weather",
+"patterns": ["Weather condition for cabbage","cabbage weather","what is good weather to grow cabbage","weather for cabbage"],
+"responses": [" Cabbage requires consistent moisture levels, and too much or too little water can affect its growth and quality. Cabbage also needs plenty of sunlight, so it is best to plant it in an area with at least six hours of direct sunlight per day."]
+}
+
+,{"tag":"cabbage_ferti",
+"patterns": ["give fertilizer for cabbage growth","cabbage fertilizer","what is good fertilizer to grow cabbage","fertilizer for cabbage"],
+"responses": ["Cabbage is a heavy feeder and requires regular fertilization. Before planting, incorporate a slow-release fertilizer or well-rotted manure into the soil. During the growing season, apply a balanced fertilizer every three to four weeks."]
+}
+,{"tag":"cabbage_pest",
+"patterns": ["give pest management for cabbage growth","pest for cabbage","cabbage pest"],
+"responses": ["Cabbage is susceptible to a variety of pests, including aphids, cabbage worms, and slugs. One approach is to use row covers to prevent pests from accessing the plants. If pests do become a problem, consider using insecticidal soap, neem oil, or other organic pest control methods"]
+}
+,{"tag":"cabbage_water",
+"patterns": ["Water condition for cabbage","cabbage water condition","what is good water to grow cabbage","water for cabbage"],
+"responses": ["It is also important to water cabbage at the base of the plant, rather than overhead, to avoid wetting the foliage, which can increase the risk of disease. Watering in the morning or early afternoon can also help to prevent excess moisture on the foliage from lingering overnight, which can also increase the risk of disease."]
+}
+,{"tag":"beetroot_soil",
+"patterns": ["soil condition for beetroot","beetroot soil condition","soil for beetroot"],
+"responses": ["Beetroot prefers well-drained, loose soil that is rich in organic matter, with a pH between 6.0 and 7.5. It is important to ensure that the soil is free of rocks and other obstructions that could impede root growth."]
+}
+,{"tag":"beetroot_temp",
+"patterns": ["Temperature condition for beetroot","beetroot temperature","what is good temperature to grow beetroot","temperature for beetroot"],
+"responses": ["Beetroot grows best in cooler temperatures, ideally between 60 and 65°F (15-18°C). The soil temperature should be at least 50°F (10°C) for successful germination, and plants should be protected from frost."]
+}
+
+,{"tag":"beetroot_weather",
+"patterns": ["Weather condition for beetroot","beetroot weather","what is good weather to grow beetroot","weather for beetroot"],
+"responses": ["Beetroot requires consistent moisture levels, and too much or too little water can affect its growth and quality. It also requires plenty of sunlight, so it is best to plant it in an area with at least six hours of direct sunlight per day."]
+}
+
+,{"tag":"beetroot_fertilizer",
+"patterns": ["Fertilizer for beetroot","beetroot fertilizer","what is good fertilizer to grow beetroot","fertilizer for beetroot"],
+"responses": ["Beetroot requires regular fertilization to thrive. Before planting, incorporate a balanced fertilizer or well-rotted manure into the soil. During the growing season, apply a nitrogen-rich fertilizer every three to four weeks to promote leaf growth, and a phosphorus-rich fertilizer when the roots begin to develop."]
+}
+,{"tag":"beetroot_pest",
+"patterns": ["pest management for beetroot growth","pest for beetroot"],
+"responses": ["Beetroot is susceptible to a variety of pests, including aphids, cutworms, and flea beetles. One approach is to use row covers to prevent pests from accessing the plants. If pests do become a problem, consider using insecticidal soap, neem oil, or other organic pest control methods. It is also important to rotate crops and practice good garden hygiene to prevent the buildup of pests and diseases in the soil."]
+}
+
+,{"tag":"beetroot_water",
+"patterns": ["water condition  for beetroot growth","beetroot water","what is good water to grow beetroot","water for beetroot","beetroot water"],
+"responses": ["To ensure that the water reaches the roots, it is best to water at the base of the plant rather than overhead. Watering in the morning or early afternoon can also help to prevent excess moisture on the foliage from lingering overnight, which can increase the risk of disease.Mulching can also be beneficial for beetroot, as it can help to retain moisture in the soil and regulate soil temperature. A layer of organic mulch, such as straw or leaves, can help to prevent evaporation and keep the soil moist."]
+}
+,{"tag":"potato-soil",
+"patterns": ["soil condition for potato","potato soil condition","soil for potato","potato soil"],
+"responses": ["Potatoes prefer well-drained, loose soil that is rich in organic matter, with a pH between 5.0 and 6.5. The soil should be loose and friable to allow the tubers to develop properly."]
+}
+,{"tag":"potato_temp",
+"patterns": ["Temperature condition for potato","potato temperature","what is good temperature to grow potato","temperature for potato"],
+"responses": ["Potatoes grow best in cooler temperatures, ideally between 60 and 70°F (15-21°C). The soil temperature should be at least 45°F (7°C) for successful germination, and plants should be protected from frost."]
+}
+
+,{"tag":"potato_weather",
+"patterns": ["Weather condition for potato","potato weather","what is good weather to grow potato","weather for potato"],
+"responses": ["Potatoes require consistent moisture levels, with an average of about 1 inch of water per week. Too much or too little water can affect its growth and quality. It also requires plenty of sunlight, so it is best to plant it in an area with at least six hours of direct sunlight per day."]
+}
+,{"tag":"potato_fertilizer",
+"patterns": ["fertilizer condition for potato","potato fertilizer","what is good tfertilizer to grow potato","fertilizer for potato"],
+"responses": ["Potatoes require regular fertilization to thrive. Before planting, incorporate a balanced fertilizer or well-rotted manure into the soil. During the growing season, apply a nitrogen-rich fertilizer at the time of planting, and again when the plants are about 6 inches tall. When the tubers begin to develop, switch to a phosphorus-rich fertilizer to promote root growth"]
+}
+,{"tag":"potato_pest",
+"patterns": ["pest management for potato","potato pest","pest for potato"],
+"responses": ["Potatoes are susceptible to a variety of pests, including Colorado potato beetles, wireworms, and aphids. One approach is to use row covers to prevent pests from accessing the plants. If pests do become a problem, consider using insecticidal soap, neem oil, or other organic pest control methods."]
+}
+,{"tag":"lf_soil",
+"patterns": ["soil condition for ladysfinger","soil condition ladysfinger","ladysfinger soil"],
+"responses": ["Lady's finger prefers well-drained soil that is rich in organic matter, with a pH between 6.0 and 6.5. The soil should be loose and friable to allow for root development"]
+}
+,{"tag":"lf_temp",
+"patterns": ["temperature condition for ladysfinger","ladysfinger temperature","what is good temperature to grow ladysfinger","temperature for ladysfinger"],
+"responses": ["Lady's finger grows best in warm temperatures, ideally between 75 and 90°F (24-32°C). It is important to protect the plants from frost and cold temperatures, as they are sensitive to cold."]
+}
+,{"tag":"lf_weather",
+"patterns": ["Weather condition for ladysfinger","ladysfinger weather","what is good weather to grow ladysfinger","weather for ladysfinger"],
+"responses": ["Lady's finger requires consistent moisture levels, with an average of about 1 inch of water per week. Too much or too little water can affect its growth and quality. It also requires plenty of sunlight, so it is best to plant it in an area with full sun exposure."]
+}
+,{"tag":"lf_fertiizer",
+"patterns": ["Fertilizer for ladysfinger","ladysfinger fertilizer","what is good fertilizer to grow ladysfinger","fertilizer for ladysfinger"],
+"responses": ["Lady's finger requires regular fertilization to thrive. Before planting, incorporate a balanced fertilizer or well-rotted manure into the soil. During the growing season, apply a nitrogen-rich fertilizer at the time of planting, and again when the plants are about 6 inches tall. When the plants begin to flower, switch to a phosphorus-rich fertilizer to promote fruit development."]
+}
+,{"tag":"apple_soil",
+"patterns": ["soil condition apple","soil for apple","apple soil condition","apple soil"],
+"responses": ["Apple trees prefer well-drained, loamy soil that is rich in organic matter, with a pH between 6.0 and 7.0. The soil should be deep enough to allow for proper root development."]
+}
+,{"tag":"apple_temp",
+"patterns": ["temperature condition for apple","apple temperature","what is good temperature to grow apple","temperature for apple"],
+"responses": ["Apple trees require a certain amount of chilling hours in the winter (between 32°F and 45°F) in order to break dormancy and produce fruit in the following season. The trees also require warm temperatures (between 60°F and 90°F) during the growing season for optimal growth and fruit development."]
+}
+,{"tag":"apple_weather",
+"patterns": ["Weather condition for apple","apple weather","what is good weather to grow apple","weather for apple"],
+"responses": ["Apple trees require consistent moisture levels, with an average of about 1 inch of water per week. Too much or too little water can affect its growth and quality. Apple trees also require full sun exposure in order to produce fruit."]
+}
+
+,{"tag":"apple_ferti",
+"patterns": ["fertilizers for apple","apple fertilizer","what is good fertilozer to grow apple","fertilizer for apple"],
+"responses": ["Apple trees require regular fertilization to thrive. Before planting, incorporate a balanced fertilizer or well-rotted manure into the soil. During the growing season, apply a nitrogen-rich fertilizer in the early spring, and a phosphorus and potassium-rich fertilizer in the late summer or early fall"]
+}
+
+,{"tag":"apple_pest",
+"patterns": ["pest management for apple","apple pest","pest for apple"],
+"responses": ["Apple trees are susceptible to a variety of pests, including aphids, codling moths, and apple maggots. One approach is to use pheromone traps or other organic pest control methods to control pests. It is also important to prune the trees regularly to improve air circulation and prevent the buildup of pests and diseases"]
+}
+
+,{"tag":"orange_soil",
+"patterns": ["soil condition for orange","soil for orange","orange for soil condition"],
+"responses": ["Orange trees prefer well-drained soil that is rich in organic matter, with a pH between 6.0 and 7.5. The soil should be deep enough to allow for proper root development, as orange trees have a deep root system."]
+}
+
+,{"tag":"orange_temp",
+"patterns": ["temperature condition for orange","orange temperature","what is good temperature to grow orange","temperature for orange"],
+"responses": ["Orange trees require warm temperatures (between 60°F and 85°F) during the growing season for optimal growth and fruit development. They also require cooler temperatures (between 35°F and 55°F) during the winter in order to break dormancy and produce fruit in the following season."]
+}
+,{"tag":"orange_weather",
+"patterns": ["weather condition for orange","orange weather","what is good weather to grow orange","weather for orange"],
+"responses": ["Orange trees require consistent moisture levels, with an average of about 1 inch of water per week. Too much or too little water can affect its growth and quality. Orange trees also require full sun exposure in order to produce fruit."]
+}
+,{"tag":"orange_fertilizer",
+"patterns": ["weather condition for orange"],
+"responses": ["Orange trees require regular fertilization to thrive. Before planting, incorporate a balanced fertilizer or well-rotted manure into the soil. During the growing season, apply a nitrogen-rich fertilizer in the early spring, and a phosphorus and potassium-rich fertilizer in the late summer or early fall."]
+}
+
+,{"tag":"orange_pest",
+"patterns": ["pest management for orange","pest for orange","orange pest"],
+"responses": ["Orange trees are susceptible to a variety of pests, including scale insects, mites, and citrus leafminers. One approach is to use sticky traps or other organic pest control methods to control pests. It is also important to prune the trees regularly to improve air circulation and prevent the buildup of pests and diseases. Additionally, it's essential to keep the area around the tree free of fallen leaves and other debris, as they can harbor pests and diseases."]
+}
+
+,{"tag":"papaya_soil",
+"patterns": ["soil condition for papaya","soil for papaya","papaya soil"],
+"responses": ["Papaya trees prefer well-drained soil that is rich in organic matter, with a pH between 6.0 and 7.0. The soil should be deep enough to allow for proper root development, as papaya trees have a shallow root system."]
+}
+,{"tag":"papaya_temp",
+"patterns": ["temperature condition for papaya","papaya temperature","what is good temperature to grow papaya","temperature for papaya"],
+"responses": ["Papaya trees require warm temperatures (between 70°F and 90°F) during the growing season for optimal growth and fruit development. They cannot tolerate frost and may suffer damage if temperatures fall below 32°F."]
+}
+,{"tag":"papaya_weather",
+"patterns": ["weather condition for papaya","papaya weather","what is good weather to grow papaya","weather for papaya"],
+"responses": ["Papaya trees require consistent moisture levels, with an average of about 1 inch of water per week. They do not tolerate waterlogged soil, so the soil should be well-drained. Papaya trees also require full sun exposure in order to produce fruit."]
+}
+,{"tag":"papaya_fertilizer",
+"patterns": ["fertilizer for papaya","papaya fertilizer","what is good fertilizer to grow papaya","fertilizer for papaya"],
+"responses": ["Papaya trees require regular fertilization to thrive. A balanced fertilizer should be applied every 2 to 3 months, starting 3 months after planting. A nitrogen-rich fertilizer can be applied during the early growth stages, while a potassium-rich fertilizer can be applied during the fruiting stage"]
+}
+,{"tag":"papaya_pest",
+"patterns": ["pest mangement for papaya","pest for papaya","papaya pest"],
+"responses": ["Papaya trees are susceptible to a variety of pests, including papaya fruit flies, spider mites, and aphids. One approach is to use sticky traps or other organic pest control methods to control pests. It is also important to prune the trees regularly to improve air circulation and prevent the buildup of pests and diseases. Additionally, it's essential to remove any fallen fruits from the ground, as they can attract pests and diseases."]
+}
+
+,{"tag":"plantain_soil",
+"patterns": ["soil condition plantain","soil condition for plantain"],
+"responses": ["Plantains prefer well-drained soil that is rich in organic matter, with a pH between 5.5 and 7.5. The soil should be deep enough to allow for proper root development, as plantains have a shallow root system."]
+}
+
+,{"tag":"plantain_temp",
+"patterns": ["temperature condition for plantain","plantain temperature","what is good temperature to grow plantain","temperature for plantain"],
+"responses": ["Plantains require warm temperatures (between 80°F and 90°F) during the growing season for optimal growth and fruit development. They cannot tolerate frost and may suffer damage if temperatures fall below 55°F."]
+}
+,{"tag":"plantain_weather",
+"patterns": ["weather condition for plantain"],
+"responses": ["Plantains require consistent moisture levels, with an average of about 1 to 2 inches of water per week. They do not tolerate drought conditions, so the soil should be well-drained yet able to retain moisture. Plantains also require full sun exposure in order to produce fruit."]
+}
+,{"tag":"plantain_ferti",
+"patterns": ["fertilizer for plantain"],
+"responses": ["Plantains require regular fertilization to thrive. A balanced fertilizer should be applied every 2 to 3 months, starting 3 months after planting. A nitrogen-rich fertilizer can be applied during the early growth stages, while a potassium-rich fertilizer can be applied during the fruiting stage"]
+}
+,{"tag":"plantain_pest",
+"patterns": ["pest management  for plantain"],
+"responses": ["Plantains are susceptible to a variety of pests, including banana weevils, nematodes, and mites. One approach is to use natural pest control methods such as intercropping with marigold or other plants that repel pests. It is also important to remove any dead leaves or decaying plant material from around the base of the tree, as they can harbor pests and diseases. Additionally, it's essential to avoid planting plantains in areas where other banana-family plants have been grown in the recent past, as this can increase the risk of pests and diseases."]
+}
+
+,{"tag":"coconut_soil",
+"patterns": ["soil condition for coconut","soil for coconut","coconut soil"],
+"responses": ["Coconut trees prefer well-drained soil that is sandy or loamy, with a pH between 5.0 and 8.0. The soil should be deep enough to allow for proper root development and should have good drainage to prevent waterlogging"]
+}
+,{"tag":"coconut_temp",
+"patterns": ["temperature condition for coconut","coconut temperature","what is good temperature to grow coconut","temperature for coconut"],
+"responses": ["Coconut trees require warm temperatures (between 75°F and 90°F) during the growing season for optimal growth and fruit development. They cannot tolerate frost and may suffer damage if temperatures fall below 50°F."]
+}
+
+,{"tag":"coconut_weather",
+"patterns": ["weather condition for coconut","coconut weather","what is good weather to grow coconut","weather for coconut"],
+"responses": ["Coconut trees require consistent moisture levels, with an average of about 2 inches of water per week. They do not tolerate drought conditions, so the soil should be able to retain moisture. Coconut trees also require full sun exposure in order to produce fruit."]
+}
+
+,{"tag":"coconut_ferti",
+"patterns": ["fertilizer for coconut","coconut fertilizer","what is good fertilizer to grow coconut","fertilizer for coconut"],
+"responses": ["Coconut trees require regular fertilization to thrive. A balanced fertilizer should be applied every 2 to 3 months, starting 3 months after planting. A nitrogen-rich fertilizer can be applied during the early growth stages, while a potassium-rich fertilizer can be applied during the fruiting stage."]
+}
+,{"tag":"coconut_pest",
+"patterns": ["pest management for coconut","pest for coconut","coconut pest"],
+"responses": ["Coconut trees are susceptible to a variety of pests, including rhinoceros beetles, coconut mites, and mealybugs. One approach is to use pheromone traps or other natural pest control methods to control pests. It is also important to remove any dead fronds or decaying plant material from around the base of the tree, as they can harbor pests and diseases. Additionally, it's essential to avoid planting coconut trees too close to each other, as this can increase the risk of pests and diseases"]
+}
+
+,{"tag":"palm_soil",
+"patterns": ["soil condition for palm","palm soil","soil for palm"],
+"responses": ["Palm trees prefer well-drained soil that is sandy or loamy, with a pH between 5.0 and 7.0. The soil should be deep enough to allow for proper root development and should have good drainage to prevent waterlogging"]
+}
+,{"tag":"palm_temp",
+"patterns": ["temperature condition for palm","palm temperature","what is good temperature to grow palm","temperature for palm"],
+"responses": ["Palm trees require warm temperatures for optimal growth, but different species have different temperature tolerances. In general, palm trees do not tolerate frost and may suffer damage if temperatures fall below freezing"]
+}
+
+
+
+,{"tag":"palm_weather",
+"patterns": ["Weather condition for palm","palm weather","what is good weather to grow palm","weather for palm"],
+"responses": ["Palm trees require consistent moisture levels, with an average of about 1 inch of water per week. They do not tolerate drought conditions, so the soil should be able to retain moisture. Palm trees also require full sun exposure in order to thrive."]
+}
+,{"tag":"palm_ferti",
+"patterns": ["fertilizer for palm","palm fertilizer"],
+"responses": ["Palm trees require regular fertilization to thrive. A balanced fertilizer should be applied every 3 to 4 months, starting 3 months after planting. The fertilizer should be applied around the drip line of the tree, and not directly on the trunk. It's important to avoid using fertilizers high in nitrogen, as this can damage the tree."]
+}
+,{"tag":"palm_pest",
+"patterns": ["pest management for palm","pest for palm","palm pest"],
+"responses": ["Palm trees are susceptible to a variety of pests, including spider mites, scale insects, and mealybugs. One approach is to use natural pest control methods such as releasing beneficial insects or spraying the tree with a mixture of water and dish soap. It is also important to remove any dead fronds or decaying plant material from around the base of the tree, as they can harbor pests and diseases. Regular pruning can also help keep pests under control"]
+}
+,{"tag":"grapes_soil",
+"patterns": ["Grapes soil condition","soil condition for grapes"],
+"responses": ["Grapes prefer well-drained soil that is rich in organic matter and has a pH between 5.5 and 6.5. The soil should be deep enough to allow for proper root development and should have good drainage to prevent waterlogging"]
+}
+
+,{"tag":"grapes_temp",
+"patterns": ["Grapes temperature condition","temperature condition for grapes"],
+"responses": ["Grapes require warm temperatures for optimal growth, but different varieties have different temperature tolerances. In general, grapes grow well in areas with warm summers and cool winters, and they can tolerate temperatures as low as 0°F in the winter."]
+}
+,{"tag":"grapes_weather",
+"patterns": ["Grapes weather condition","weather condition for grapes"],
+"responses": ["Grapes require consistent moisture levels, with an average of about 1 inch of water per week. They do not tolerate drought conditions, so the soil should be able to retain moisture. Grapes also require full sun exposure in order to produce fruit."]
+}
+,{"tag":"grapes_ferti",
+"patterns": ["Grapes fertilizer","fertilizer for grapes"],
+"responses": ["Grapes require regular fertilization to thrive. A balanced fertilizer should be applied every year in the early spring, before the vines begin to grow. It's important to avoid using fertilizers high in nitrogen, as this can promote vegetative growth at the expense of fruit production."]
+}
+,{"tag":"grapes_pest",
+"patterns": ["Grapes pest management","pest management for grapes"],
+"responses": ["Grapes are susceptible to a variety of pests, including aphids, mites, and grape berry moths. One approach is to use natural pest control methods such as releasing beneficial insects or spraying the vines with a mixture of water and dish soap. It is also important to remove any diseased or damaged fruit from the vines, as they can harbor pests and diseases. Additionally, regular pruning and canopy management can help reduce pest problems by improving air circulation and reducing humidity around the vines."]
+}
+,{"tag":"brinjal_soil",
+"patterns": ["brinjal soil condition","soil condition for brinjal"],
+"responses": ["It prefers well-drained soil that is rich in organic matter and has a pH between 5.5 and 6.5. The soil should be deep enough to allow for proper root development and should have good drainage to prevent waterlogging"]
+}
+,{"tag":"brinjal_temp",
+"patterns": ["brinjal temperature condition","temperature condition for brinjal"],
+"responses": ["Brinjal requires warm temperatures for optimal growth, with an ideal temperature range of 68°F to 86°F. It does not tolerate frost and should not be planted until after the last frost date in your area"]
+}
+,{"tag":"brinjal_weather",
+"patterns": ["brinjal weather condition","weather condition for brinjal"],
+"responses": ["Brinjal requires consistent moisture levels, with an average of about 1 inch of water per week. It does not tolerate drought conditions and may suffer if the soil is too dry. Brinjal also requires full sun exposure in order to thrive"]
+}
+,{"tag":"brinjal_ferti",
+"patterns": ["brinjal fertilizer","fertilizer for brinjal"],
+"responses": ["Brinjal requires regular fertilization to thrive. A balanced fertilizer should be applied every 3 to 4 weeks, starting 3 weeks after planting. The fertilizer should be applied around the base of the plant, taking care not to get it on the leaves or stem."]
+}
+,{"tag":"brinjal_pest",
+"patterns": ["brinjal pest management","pest management for brinjal"],
+"responses": ["Brinjal is susceptible to a variety of pests, including flea beetles, spider mites, and aphids. One approach is to use natural pest control methods such as releasing beneficial insects or spraying the plant with a mixture of water and dish soap. It is also important to remove any diseased or damaged leaves from the plant, as they can harbor pests and diseases. Additionally, rotating crops and maintaining good weed control can help reduce pest problems"]
+}
+,{"tag":"Soil_Jasmine",
+"patterns": ["What is the soil condition for jasmine?", "what is the soil for jasmine? soil condition for jasmine?", "Ph Level for Jasmine", "Ph range for Jasmine"],
+"responses": ["Jasmine plants prefer well-draining soil that is rich in organic matter. They can grow in a variety of soil types, but a slightly acidic soil with a pH between 6.0 and 7.0 is ideal"]
+}
+,{"tag":"Temperature_Jasmine",
+"patterns": ["what is the temperature level for jasmine?", "Temperature level for Jasmine?", "Temperature for Jasmine?"],
+"responses": ["Jasmine plants prefer moderate temperature between 60°F and 75°F. They can tolerate a range of temperatures, but they do not do well in extreme heat or cold."]
+}
+,{"tag":"Weather_Jasmine",
+"patterns": ["What is the Weather condition for jasmine?", "Weather condition for Jasmine?", "Weather for Jasmine?"],
+"responses": ["Jasmine plants require consistent moisture levels, but they don&#39;t do well in soggy soil. They prefer regular watering that allows the soil to dry out slightly between waterings. They also require a minimum of 4 hours of direct sunlight per day."]
+}
+,{"tag":"Fertilizer_Jasmine",
+"patterns": ["What are the fertilizers of Jasmine?", "Fertilizers for Jasmine?", "Jasmine fertilizer"],
+"responses": ["Jasmine plants benefit from regular fertilization throughout the growing season. A balanced fertilizer should be applied every 4 to 6 weeks, starting in the spring. It's also a good idea to add a slow-release fertilizer to the soil in the spring."]
+}
+,{"tag":"PestManagement_Jasmine",
+"patterns": ["Pest Management for Jasmine?", "Jasmine pest Management" , "pest for jasmine", "jasmine pest."],
+"responses": ["Jasmine plants are relatively pest-free, but they can occasionally be attacked by aphids or spider mites. It's important to regularly inspect the plants for signs of pests and take action immediately if they are detected. Natural pest control methods such as releasing beneficial insects or spraying the plants with a mixture of water and dish soap can be effective."]
+}
+,{"tag":"Soil_Rose",
+"patterns": ["What is the soil condition for Rose?", "what is the soil for Rose?", "soil condition for Rose?", "Soil for Rose?", "Ph Level for Rose", "Ph range for Rose", "What is the pH Level for Rose?"],
+"responses": ["Roses prefer well-draining soil that is rich in organic matter. The soil should have a pH between 6.0 and 6.5 for optimal growth."]
+}
+,{"tag":"Temperature_Rose",
+"patterns": ["what is the temperature level for Rose?", "Temperature level for Rose?", "Temperature for Rose?", "Rose Temperature"],
+"responses": ["Roses grow best in moderate temperatures between 60°F and 75°F. They can tolerate a range of temperatures, but extreme heat or cold can stress the plants and impact their growth."]
+}
+,{"tag":"Weather_Rose",
+"patterns": ["What is the Weather condition for Rose?", "Weather condition for rose?", "Weather for Rose?", "Rose Condition"],
+"responses": ["Roses require consistent moisture levels, but they don't do well in soggy soil. They prefer regular watering that allows the soil to dry out slightly between waterings. They also require a minimum of 6 hours of direct sunlight per day."]
+}
+,{"tag":"Fertilizer_Rose",
+"patterns": ["What are the fertilizers of Rose?", "Fertilizers for Rose?", "Rose fertilizer?"],
+"responses": ["Roses benefit from regular fertilization throughout the growing season. A balanced fertilizer should be applied every 4 to 6 weeks, starting in the spring. It's also a good idea to add a slow-release fertilizer to the soil in the spring."]
+}
+
+,{"tag":"PestManagement_Rose",
+"patterns": ["Pest Management for Rose?", "Rose pest Management" , "pest for Rose", "Rose pest."],
+"responses": ["Roses are susceptible to a variety of pests, including aphids, spider mites, and Japanese beetles. It's important to regularly inspect the plants for signs of pests and take action immediately if they are detected. Natural pest control methods such as releasing beneficial insects or spraying the plants with a mixture of water and dish soap can be effective. It's also important to remove any diseased or damaged branches from the plants, as they can harbor pests and diseases. Finally, maintaining good weed control canhelp reduce pest problems."]
+}
+,{"tag":"Soil_Lemon",
+"patterns": ["What is the soil condition for Lemon? what is the soil for Lemon?", "soil condition for Lemon?", "Soil for Lemon?", "Ph Level for Lemon,", "Ph range for Lemon", "What is the pH Level for Lemon?"],
+"responses": ["Lemon trees prefer well-draining soil. that is slightly acidic with a pH between 5.5 and 6.5. They do best in soil that is rich in organic matter and has good drainage"]
+}
+
+,{"tag":"Temperature_Lemon",
+"patterns": ["what is the temperature level for Lemon?", "Temperature level for Lemon?", "Temperature for Lemon?", "Lemon Temperature"],
+"responses": ["Lemon trees are subtropical plants that require warm temperatures to grow. They can tolerate a range of temperatures between 55°F and 85°F, but they do best when temperatures remain above 60°F. Frost can damage or kill lemon trees, so they should be protected in colder climates."]
+}
+,{"tag":"Weather_Lemon",
+"patterns": ["What is the Weather condition for Lemon?", "Weather condition for Lemon?", "Weather for Lemon?", "Lemon Condition"],
+"responses": ["Lemon trees require consistent moisture levels and should be watered deeply once a week during the growing season. They do best in full sun and require a minimum of 6 hours of direct sunlight per day. High humidity can increase the risk of diseases, so it's important to provide good air circulation around the tree."]
+}
+
+,{"tag":"Fertilizer_Lemon",
+"patterns": ["What are the fertilizers of Lemon?", "Fertilizers for Lemon?", "Lemon fertilizer"],
+"responses": ["Lemon trees require regular fertilization to thrive. A balanced fertilizer should be applied every 4 to 6 weeks during the growing season. It's also a good idea to add a slow-release fertilizer to the soil in the spring."]
+}
+,{"tag":"PestManagement_Lemon",
+"patterns": ["Pest Management for Lemon?", "Lemon pest Management", "pest for Lemon", "Lemon pest."],
+"responses": ["Lemon trees are susceptible to a variety of pests, including spider mites, scale insects, and aphids. One approach is to use natural pest control methods such as releasing beneficial insects or spraying the trees with a mixture of water and dish soap. It's also important to remove any diseased or damaged branches from the trees, as they can harbor pests and diseases. Additionally, maintaining good weed control can help reduce pest problems"]
+}
+,{"tag":"Soil_Tomato",
+"patterns": ["What is the soil condition for Tomato?", "what is the soil for Tomato?", "soil condition for Tomato?", "Soil for Tomato?", "Ph Level for Tomato", "Ph range for Tomato", "What is the pH Level for Tomato?"],
+"responses": ["Tomatoes prefer well-draining soil that is rich in organic matter and has a pH between 6.0 and 7.0. They are heavy feeders, so it's important to amend the soil with compost or well-rotted manure before planting."]
+}
+,{"tag":"Temperature_Tomato",
+"patterns": ["what is the temperature level for Tomato?", "Temperature level for Tomato?", "Temperature for Tomato?", "Tomato Temperature"],
+"responses": ["Tomatoes are warm-season plants and require warm temperatures to grow. The ideal temperature range for growing tomatoes is between 70°F and 85°F. They can tolerate slightly cooler temperatures but may grow more slowly"]
+}
+
+,{"tag":"Weather_Tomato",
+"patterns": ["What is the Weather condition for Tomato?", "Weather condition for Tomato?", "Weather for Tomato?", "Tomato Condition"],
+"responses": ["Tomatoes require consistent moisture levels, with an average of about 1 inch of water per week. They grow best in full sun and require a minimum of 6 hours of direct sunlight per day. They do not tolerate frost and should be planted after the last frost date in your area."]
+}
+,{"tag":"Fertilizer_Tomato",
+"patterns": ["What are the fertilizers of Tomato?", "Fertilizers for Tomato?", "Tomato fertilizer?"],
+"responses": ["Tomatoes require regular fertilization to thrive. A balanced fertilizer should be applied every 3 to 4 weeks, starting 3 weeks after planting. It's also a good idea to side-dress the plants with compost or well-rotted manure halfway through the growing season."]
+}
+,{"tag":"PestManagement_Tomato",
+"patterns": ["Pest Management for Tomato?", "Tomato pest Management", "pest for Tomato", "Tomato pest."],
+"responses": ["Tomatoes are susceptible to a variety of pests, including aphids, spider mites, and tomato hornworms. One approach is to use natural pest control methods such as releasing beneficial insects or spraying the plants with a mixture of water and dish soap. It's also important to remove any diseased or damaged leaves from the plants, as they can harbor pests and diseases. Additionally, maintaining good weed control can help reduce pest problems."]
+}
+,{"tag":"Soil_Cucumber",
+"patterns": ["What is the soil condition for Cucumber?", "what is the soil for Cucumber?", "soil condition for Cucumber?", "Soil for Cucumber?", "Ph Level for Cucumber", "Ph range for Cucumber", "What is the pH Level for Cucumber?"],
+"responses": ["Cucumbers prefer well-draining soil that is rich in organic matter and has a pH between 6.0 and 7.0. They require a lot of nutrients, so it's a good idea to amend the soil with compost or well- rotted manure before planting."]
+}
+,{"tag":"Temperature_Cucumber",
+"patterns": ["what is the temperature level for Cucumber?", "Temperature level for Cucumber?", "Temperature for Cucumber?", "Cucumber Temperature"],
+"responses": ["Cucumbers are warm-season plants and require warm temperatures to grow. The ideal temperature range for growing cucumbers is between 70°F and 95°F. However, they can be grown in slightly cooler temperatures as long as they receive plenty of sunlight"]
+}
+
+,{"tag":"Weather_Cucumber",
+"patterns": ["What is the Weather condition for Cucumber?" ,"Weather condition for Cucumber?", "Weather for Cucumber?", "Cucumber Condition"],
+"responses": ["Cucumbers require consistent moisture levels, with an average of about 1 inch of water per week. They grow best in full sun and require a minimum of 6 hours of direct sunlight per day. They do not tolerate frost and should be planted after the last frost date in your area"]
+}
+,{"tag":"Fertilizer_Cucumber",
+"patterns": ["What are the fertilizers of Cucumber?" ,"Fertilizers for Cucumber?", "Cucumber fertilizer?"],
+"responses": ["Cucumbers require regular fertilization to thrive. A balanced fertilizer should be applied every 3 to 4 weeks, starting 3 weeks after planting. It&#39;s also a good idea to side-dress the plants with compost or well-rotted manure halfway through the growing season."]
+}
+,{"tag":"PestManagement_Cucumber",
+"patterns": ["Pest Management for Cucumber?", "Cucumbet pest Management" , "pest for Cucumber","Cucumber pest."],
+"responses": ["Cucumbers are susceptible to a variety of pests, including cucumber beetles, aphids, and spider mites. One approach is to use natural pest control methods such as releasing beneficial insects or spraying the plants with a mixture of water and dish soap. It&#39;s also important to remove any diseased or damaged leaves from the plants, as they can harbor pests and diseases. Additionally, maintaining good weed control can help reduce pest problems."]
+}
+,{"tag":"Soil_Mint",
+"patterns": ["What is the soil condition for Mint?", "what is the soil for Mint?", "soil condition for Mint?", "Soil for Mint?", "Ph Level for Mint","Ph range for Mint", "What is the pH Level for Mint?"],
+"responses": ["Mint prefers well-draining soil that is rich in organic matter and has a pH between 6.0 and 7.0. Mint is known for being a fast-growing and invasive plant, so it is recommended to plant it in a container or in a dedicated garden bed to prevent it from spreading uncontrollably."]
+}
+,{"tag":"Temperature_Mint",
+"patterns": ["Pest Management for Cucumber?", "Cucumbet pest Management" , "pest for Cucumber","Cucumber pest."],
+"responses": ["Mint prefers cool temperatures and can be grown in a range of climates. It can tolerate temperatures down to 40°F but does best in temperatures between 60°F and 70°F."]
+}
+,{"tag":"Weather_Mint",
+"patterns": ["What is the Weather condition for Mint?", "Weather condition for Mint?", "Weather for Mint?", "Mint Condition"],
+"responses": ["Mint requires consistent moisture levels, with an average of about 1 inch of water per week. It can tolerate partial shade but does best in full sun."]
+}
+,{"tag":"Fertilizer_Mint",
+"patterns": ["What are the fertilizers of Mint?", "Fertilizers for Mint?", "Mint fertilizer?"],
+"responses": ["Mint does not require much fertilization, but a balanced fertilizer can be applied once or twice a year. Alternatively, compost can be added to the soil as a natural fertilizer."]
+}
+,{"tag":"Soil_Greens",
+"patterns": ["What is the soil condition for Greens?", "what is the soil for Greens?", "soil condition for Greens?", "Soil for Greens?", "Ph Level for Greens", "Ph range for Greens", "What is the pH Level for Greens?"],
+"responses": ["Leafy greens prefer well-draining soil that is rich in organic matter and has a pH between 6.0 and 7.0. The soil should be kept consistently moist, but not waterlogged."]
+}
+,{"tag":"Temperature_Greens",
+"patterns": ["what is the temperature level for Greens?", "Temperature level for Greens?", "Temperature for Greens?", "Greens Temperature"],
+"responses": ["Leafy greens prefer cool temperatures for optimal growth, with an ideal temperature range of 60°F to 70°F. Some varieties can tolerate slightly warmer temperatures, while others may bolt (go to seed) in hot weather."]
+}
+,{"tag":"Weather_Greens",
+"patterns": ["What is the Weather condition for Greens?", "Weather condition for Greens?", "Weather for Greens?", "Greens Condition"],
+"responses": ["Leafy greens require consistent moisture levels, with an average of about 1 inch of water per week. They can be grown in partial shade or full sun, but in hot weather, they may benefit from some shade. Leafy greens are generally hardy and can tolerate some frost, but extended periods of freezing temperatures can damage or kill them."]
+}
+
+,{"tag":"Fertilizer_Greens",
+"patterns": ["What are the fertilizers of greens?", "Fertilizers for Greens?", "Greens fertilizer?"],
+"responses": ["Leafy greens require regular fertilization to thrive. A balanced fertilizer should be applied every 3 to 4 weeks, starting 3 weeks after planting. The fertilizer should be applied around the base of the plants, taking care not to get it on the leaves."]
+}
+
+,{"tag":":PestManagement_Greens",
+"patterns": ["Pest Management for Greens?", "Greens pest Management", "pest for Greens", "Greens pest."],
+"responses": ["Leafy greens are susceptible to a variety of pests, including aphids, flea beetles, and caterpillars. One approach is to use natural pest control methods such as releasing beneficial insects or spraying the plants with a mixture of water and dish soap. It is also important to remove any diseased or damaged leaves from the plants, as they can harbor pests and diseases."]
+}
+,{"tag":":Soil_Watermelon",
+"patterns": ["What is the soil condition for Watermelon?", "what is the soil for Watermelon?", "soil condition for Watermelon?", "Soil for Watermelon?", "Ph Level for Watermelon", "Ph range for Watermelon", "What is the pH Level for Watermelon?"],
+"responses": ["Watermelon prefers well-drained soil that is rich in organic matter and has a pH between 6.0 and 7.5. The soil should be deep enough to allow for proper root development and should have good drainage to prevent waterlogging"]
+}
+,{"tag":":Temperature_Watermelon",
+"patterns": ["what is the temperature level for Watermelon?", "Temperature level for Watermelon?", "Temperature for Watermelon?", "Watermelon Temperature"],
+"responses": ["Watermelon requires warm temperatures for optimal growth, with an ideal temperature range of 70°F to 85°F. It does not tolerate frost and should not be planted until after the last frost date in your area."]
+}
+,{"tag":":Weather_Watermelon",
+"patterns": ["What is the Weather condition for Watermelon?", "Weather condition for Watermelon?", "Weather for Watermelon?", "Watermelon Condition"],
+"responses": ["Watermelon requires consistent moisture levels, with an average of about 1 inch of water per week. It does not tolerate drought conditions and may suffer if the soil is too dry. Watermelon also requires full sun exposure in order to thrive."]
+}
+,{"tag":":Fertilizer_Watermelon",
+"patterns": ["What are the fertilizers of Watermelon?", "Fertilizers for Watermelon?", "Watermelon fertilizer"],
+"responses": ["Watermelon requires regular fertilization to thrive. A balanced fertilizer should be applied every 2 to 3 weeks, starting 2 weeks after planting. The fertilizer should be applied around the base of the plant, taking care not to get it on the leaves or stem."]
+}
+,{"tag":":PestManagement_Watermelon",
+"patterns": ["Pest Management for Watermelon?", "Watermelon pest Management" , "pest for Watermelon", "Watermelon pest."],
+"responses": ["Watermelon is susceptible to a variety of pests, including aphids, spider mites, and cucumber beetles. One approach is to use natural pest control methods such as releasing beneficial insects or spraying the plant with a mixture of water and dish soap. It is also important to remove any diseased or damaged leaves from the plant, as they can harbor pests and diseases."]
+}
+,{"tag":":Soil_Foxtail millet",
+"patterns": ["what is the temperature level for Foxtail millet?" , "Temperature level for Foxtail millet?" ,"Temperature for Foxtail millet?", "Foxtail millet Temperature"],
+"responses": ["Foxtail millet grows well in well-drained sandy loam or loamy soil. It prefers a slightly acidic to neutral soil pH range of 6.0 to 7.5."]
+}
+
+,{"tag":":Temperature_Foxtail millet",
+"patterns": ["what is the temperature level for Foxtail millet?" , "Temperature level for Foxtail millet?","Temperature for Foxtail millet?", "Foxtail millet Temperature"],
+"responses": ["It requires temperatures between 25-35°C (77-95°F) for optimum growth."]
+}
+,{"tag":":Weather_Foxtail millet",
+"patterns": ["What is the Weather condition for Foxtail millet?" , "Weather condition for Foxtail millet?" ,"Weather for Foxtail millet?" , "Foxtail millet Condition"],
+"responses": ["It is a warm-season crop. It can tolerate both drought and flooding to some extent, but it grows best in areas with an average annual rainfall of 700-900 mm (27-35 inches). It is suitable for growing in regions with hot summers and moderate winters."]
+}
+,{"tag":":Fertilizer_Foxtail millet",
+"patterns": ["What are the fertilizers of Foxtail millet?" , "Fertilizers for Foxtail millet?" , "Foxtail millet fertilizer"],
+"responses": ["Foxtail millet requires moderate amounts of nitrogen, phosphorus, and potassium fertilizers for optimum growth. The recommended dose is 30-40 kg/ha of nitrogen, 20-30 kg/ha of phosphorus, and 20-25 kg/ha of potassium. Organic fertilizers like farmyard manure can also be used to improve soil fertility."]
+}
+,{"tag":":PestManagement_Foxtail millet",
+"patterns": ["Pest Management for Foxtail millet?" , "Foxtail millet pest Management?" , "pest for Foxtail millet?","Foxtail millet pest?"],
+"responses": ["The common pests of foxtail millet include stem borers, leaf folders, earhead bugs, shoot flies, and termites. These pests can be controlled through the use of pesticides or by adopting integrated pest management practices such as crop rotation, use of resistant varieties, and timely sowing and harvesting."]
+}
+,{"tag":":Soil_ Pearlmillet",
+"patterns": ["What is the soil condition for Pearl millet?", "what is the soil for Pearl millett?", "soil condition for Pearl millet?", "Soil for Pearl millet?" , "Ph Level for Pearl millet", "Ph range for Pearl millet", "What is the pH Level for Pearl millet?"],
+"responses": ["Pearl millet can grow in a range of soils, but it prefers well-drained soils with a Ph range of 6.0-8.5. It is tolerant of acidic and alkaline soils."]
+}
+
+,{"tag":":Temperature_Pearlmillet",
+"patterns": ["what is the temperature level for Pearl millet?", "Temperature level for Pearl millet?" ,"Temperature for Pearl millet?", "Pearl millet Temperature"],
+"responses": ["It requires a temperature range of 25-35°C (77-95°F) for optimal growth."]
+}
+,{"tag":":Weather_Pearlmillet",
+"patterns": ["What is the Weather condition for Pearl millet?" ,  "Weather condition for Pearl millet?" ,"Weather for Pearl millet?", "Pearl millet Condition"],
+"responses": ["Pearl millet is a warm-season crop. It can tolerate drought conditions and grows best in regions with an average annual rainfall of 400-800 mm (16-32 inches). It can also grow in areas with higher rainfall but may be more susceptible to lodging."]
+}
+
+,{"tag":":Fertilizer_Pearlmillet",
+"patterns": ["What are the fertilizers of Pearl millet?", "Fertilizers for Pearl millet?" ,"Pearl millet fertilizer"],
+"responses": ["Pearl millet requires moderate amounts of nitrogen, phosphorus, and potassium fertilizers for optimum growth. The recommended dose is 40-60 kg/ha of nitrogen, 20-30 kg/ha of phosphorus, and 20-25 kg/ha of potassium. Organic fertilizers like farmyard manure can also be used to improve soil fertility."]
+}
+
+,{"tag":":PestManagement_Finger millett",
+"patterns": ["Pest Management for Finger millet?" , "Finger millet pest Management" , "pest for Finger millet", "Finger millet pest."],
+"responses": ["The common pests of finger millet include stem borers, head bugs, midges, and armyworms. These pests can be controlled through the use of pesticides or by adopting integrated pest management practices such as crop rotation, use of resistant varieties, and timely sowing and harvesting."]
+}
+
+
+,{"tag":":Soil_ Prosomillet",
+"patterns": ["What is the soil condition for Proso millet?",  "what is the soil for Proso millett?", "soil condition for Proso millet?" , "Soil for Proso millet?", "Ph Level for Proso millet", "Ph range for Proso millet", "What is the pH Level for Proso millet?"],
+"responses": ["Proso millet can grow in a range of soils, but it prefers well-drained sandy loam or loamy soils with a pH range of 6.0-8.0. It is relatively tolerant of saline and alkaline soils."]
+}
+,{"tag":":Temperature_Prosomillet",
+"patterns": ["what is the temperature level for Proso millet?" ,"Temperature level for Proso millet?", "Temperature for Proso millet?", "Proso millet Temperature"],
+"responses": ["It requires a temperature range of 25-35°C (77-95°F) for optimal growth."]
+}
+,{"tag":":Weather_Prosomillet",
+"patterns": ["What is the Weather condition for Proso millet?" , "Weather condition for Proso millet?" ,"Weather for Proso millet?", "Proso millet Condition"],
+"responses": ["It is a warm-season crop. It is tolerant of drought conditions and can grow in areas with an average annual rainfall of 300-700 mm (12-28 inches). It can also grow in regions with higher rainfall, but excessive moisture can lead to lodging and fungal diseases."]
+}
+,{"tag":":Fertilizer_Prosomillet",
+"patterns": ["What are the fertilizers of Proso millet?", "Fertilizers for Proso millet?" , "Proso millet fertilizer"],
+"responses": ["Proso millet requires moderate amounts of nitrogen, phosphorus, and potassium fertilizers for optimum growth. The recommended dose is 30-50 kg/ha of nitrogen, 20-30 kg/ha of phosphorus, and 20-25 kg/ha of potassium. Organic fertilizers like farmyard manure can also be used to improve soil fertility."]
+}
+
+,{"tag":":PestManagement_Prosomillet",
+"patterns": ["Pest Management for Proso millet?", "Proso millet pest Management" , "pest for Proso millet", "Proso millet pest."],
+"responses": ["The common pests of proso millet include aphids, leafhoppers, and stem borers. These pests can be controlled through the use of pesticides or by adopting integrated pest management practices such as crop rotation, use of resistant varieties, and timely sowing and harvesting."]
+}
+,{"tag":":Soil_ Barnyardmillet",
+"patterns": ["What is the soil condition for Barnyard millet?" , "what is the soil for Barnyard millett?" , "soil condition for Barnyard millet?" ,"Soil for Barnyard millet?" , "Ph Level for Barnyard millet", "Ph range for Barnyard millet", "What is the pH Level for Barnyard millet?"],
+"responses": ["Barnyard millet can grow in a range of soils, but it prefers well-drained loamy soils with a pH range of 6.0-7.5. It can also grow in mildly acidic to alkaline soils."]
+}
+,{"tag":":Temperature_ Barnyardmillet",
+"patterns": ["what is the temperature level for Barnyard millet?", "Temperature level for Barnyard millet?" ,"Temperature for Barnyard millet?", "Barnyard millet Temperature"],
+"responses": ["It requires a temperature range of 25-35°C (77-95°F) for optimal growth."]
+}
+
+,{"tag":":Weather_ Barnyardmillet",
+"patterns": ["What is the Weather condition for Barnyard millet?" , "Weather condition for Barnyard millet?", "Weather for Barnyard millet?", "Barnyard millet Condition"],
+"responses": ["It is relatively drought tolerant and can grow in areas with an average annual rainfall of 600-900 mm (23-35 inches). It can also tolerate high temperatures and dry conditions."]
+}
+,{"tag":":Fertilizer_Barnyardmillet",
+"patterns": ["What are the fertilizers of Barnyard millet?", "Fertilizers for Barnyard millet?", "Barnyard millet fertilizer"],
+"responses": ["Barnyard millet requires moderate amounts of nitrogen, phosphorus, and potassium fertilizers for optimum growth. The recommended dose is 40-60 kg/ha of nitrogen, 30-40 kg/ha of phosphorus, and 20-25 kg/ha of potassium. Organic fertilizers like farmyard manure can also be used to improve soil fertility."]
+}
+
+,{"tag":":PestManagement_Barnyardmillet",
+"patterns": ["Pest Management for Barnyard millet?", "Barnyard millet pest Management" , "pest for Barnyard millet", "Barnyard millet pest."],
+"responses": ["The common pests of barnyard millet include stem borers, head bugs, and earhead caterpillars. These pests can be controlled through the use of pesticides or by adopting integrated pest management practices such as crop rotation, use of resistant varieties, and timely sowing and harvesting."]
+}
+,{"tag":":Soil_Littlemillet",
+"patterns": ["What is the soil condition for Little millet?", "what is the soil for Little millett?", "soil condition for Little millet?", "Soil for Little millet?", "Ph Level for Little millet", "Ph range for Little millet", "What is the pH Level for Little millet?"],
+"responses": ["Little millet can grow in a range of soils, but it prefers well-drained sandy loam or loamy soils with a pH range of 6.0-7.5. It is relatively tolerant of acidic and alkaline soils."]
+}
+,{"tag":":Temperature_Littlemillet",
+"patterns": ["what is the temperature level for Little millet?", "Temperature level for Little millet?","Temperature for Little millet?", "Little millet Temperature"],
+"responses": ["It requires a temperature range of 25-35°C (77-95°F) for optimal growth."]
+}
+,{"tag":":Weather_Littlemillet",
+"patterns": ["What is the Weather condition for Little millet?", "Weather condition for Little millet?", "Weather for Little millet?", "Little millet Condition"],
+"responses": ["It is relatively drought tolerant and can grow in areas with an average annual rainfall of 500-800 mm (20-32 inches). It can also grow in regions with higher rainfall, but excessive moisture can lead to lodging and fungal diseases."]
+}
+,{"tag":":Fertilizer_ Littlemillet",
+"patterns": ["What are the fertilizers of Little millet?", "Fertilizers for Little millet?", "Little millet fertilizer"],
+"responses": ["Little millet requires moderate amounts of nitrogen, phosphorus, and potassium fertilizers for optimum growth. The recommended dose is 40-60 kg/ha of nitrogen, 30-40 kg/ha of phosphorus, and 20-25 kg/ha of potassium. Organic fertilizers like farmyard manure can also be used to improve soil fertility."]
+}
+
+,{"tag":":PestManagement_Littlemillet",
+"patterns": ["Pest Management for Little millet?", "Little millet pest Management" , "pest for Little millet", "Little millet pest."],
+"responses": ["The common pests of little millet include stem borers, head bugs, and earhead caterpillars. These pests can be controlled through the use of pesticides or by adopting integrated pest management practices such as crop rotation, use of resistant varieties, and timely sowing and harvesting."]
+}
+,{"tag":":Soil_ Kodomillet",
+"patterns": ["What is the soil condition for Kodo millet?" ,"what is the soil for Kodo millett?" , "soil condition for Kodo millet?" , "Soil for Kodo millet?" ,"Ph Level for Kodo millet", "Ph range for Kodo millet", "What is the pH Level for Kodo millet?"],
+"responses": ["Kodo millet prefers well-drained sandy loam or loamy soils with a pH range of 5.5-7.5. It can also grow in mildly acidic to alkaline soils."]
+}
+,{"tag":":Temperature_Kodomillet",
+"patterns": ["what is the temperature level for Kodo millet?" , "Temperature level for Kodo millet?" ,"Temperature for Kodo millet?", "Kodo millet Temperature"],
+"responses": ["It requires a temperature range of 25-35°C (77-95°F) for optimal growth."]
+}
+
+,{"tag":":Weather_Kodomillet",
+"patterns": ["What is the Weather condition for Kodo millet?", "Weather condition for Kodo millet?","Weather for Kodo millet?","Kodo millet Condition"],
+"responses": ["It is relatively drought tolerant and can grow in areas with an average annual rainfall of 400-800 mm (16-32 inches). It can also tolerate high temperatures and dry conditions."]
+}
+,{"tag":":Fertilizer_Kodomillet",
+"patterns": ["What are the fertilizers of Kodo millet?", "Fertilizers for Kodo millet?" , "Kodo millet fertilizer"],
+"responses": ["Kodo millet requires moderate amounts of nitrogen, phosphorus, and potassium fertilizers for optimum growth. The recommended dose is 40-60 kg/ha of nitrogen, 30-40 kg/ha of phosphorus, and 20-25 kg/ha of potassium. Organic fertilizers like farmyard manure can also be used to improve soil fertility."]
+}
+,{"tag":":PestManagement_Kodomillet",
+"patterns": ["Pest Management for Kodo millet?" , "Kodo millet pest Management" , "pest for Kodo millet", "Kodo millet pest."],
+"responses": ["The common pests of kodo millet include stem borers, head bugs, and earhead caterpillars. These pests can be controlled through the use of pesticides or by adopting integrated pest management practices such as crop rotation, use of resistant varieties, and timely sowing and harvesting."]
+}
+
+,{"tag":":Soil_Teff",
+"patterns": ["What is the soil condition for Teff?" , "what is the soil for Teff?", "soil condition for Teff ?", "Soil for Tefft?", "Ph Level for Teff", "Ph range for Teff", "What is the pH Level for Teff?"],
+"responses": ["Teff prefers well-drained soils with a pH range of 6.0-7.5. It can grow in a range of soils, from sandy loam to heavy clay soils. It is also tolerant of acidic and alkaline soils."]
+}
+,{"tag":":Temperature_Teff",
+"patterns": ["what is the temperature level for Teff?","Temperature level for Teff?", "Temperature for Teff?" ,"Teff Temperature"],
+"responses": ["Teff is adapted to a wide range of temperatures, from 10-35°C (50-95°F)."]
+}
+,{"tag":":Weather_Teff",
+"patterns": ["What is the Weather condition for Teff?" , "Weather condition for Teff?" , "Weather for Teff?" , "Teff Condition"],
+"responses": ["It can grow in areas with an average annual rainfall of 400-1000 mm (16-40 inches), but it is also tolerant of drought conditions. It can also grow in areas with high humidity and can tolerate frost."]
+}
+,{"tag":":Fertilizer_Teff",
+"patterns": ["What are the fertilizers of Teff?", "Fertilizers for Teff?", "Teff fertilizer"],
+"responses": ["Teff is a relatively low input crop and requires moderate amounts of nitrogen, phosphorus, and potassium fertilizers for optimum growth. The recommended dose is 30-40 kg/ha of nitrogen, 20-30 kg/ha of phosphorus, and 20-25 kg/ha of potassium.Organic fertilizers like farmyard manure can also be used to improve soil fertility."]
+}
+,{"tag":":PestManagement_ Teff",
+"patterns": ["Pest Management for Teff?", "Teff pest Management" , "pest for Teff", "Teff pest."],
+"responses": ["The common pests of teff include shoot fly, aphids, and armyworms. These pests can be controlled through the use of pesticides or by adopting integrated pest management practices such as crop rotation, use of resistant varieties, and timely sowing and harvesting."]
+}
+
+,{"tag":":Soil_Rice",
+"patterns": ["What is the soil condition for Rice?", "what is the soil for Rice?", "soil condition for Rice?" ,  "Soil for Rice?", "Ph Level for rice" , "Ph range for Rice", "What is the pH Level for Rice?"],
+"responses": ["Rice requires well-drained soils that are rich in organic matter with a pH range of 5.5-7.5. It grows best in soils that are relatively heavy, such as clay or loam soils."]
+}
+,{"tag":":Temperature_Rice",
+"patterns": ["what is the temperature level for Rice?", "Temperature level for Rice?", "Temperature for Rice?", "Rice Temperature"],
+"responses": ["The ideal temperature range for rice cultivation is 20-35°C (68-95°F) during the growing season, with a minimum temperature of 16°C (60°F) and a maximum temperature of 38°C (100°F)."]
+}
+,{"tag":":Weather_Rice",
+"patterns": ["What is the Weather condition for Rice?",  "Weather condition for Rice?", "Weather for Rice?", "Rice Condition"],
+"responses": ["Rice is generally grown in areas with an average annual rainfall of 1000-3000 mm (40-120 inches). However, it can also grow in areas with lower rainfall if sufficient irrigation is provided."]
+}
+,{"tag":":Fertilizer_Rice",
+"patterns": ["What are the fertilizers of Rice?", "Fertilizers for Rice?", "Rice fertilizer"],
+"responses": ["Rice requires large amounts of nitrogen, phosphorus, and potassium fertilizers for optimum growth. The recommended dose is 100-120 kg/ha of nitrogen, 30-50 kg/ha of phosphorus, and 50-60 kg/ha of potassium. Organic fertilizers like farmyard manure can also be used to improve soil fertility"]
+}
+,{"tag":":PestManagement_Rice",
+"patterns": ["Pest Management for Rice?", "Rice pest Management" , "pest for Rice", "Rice pest."],
+"responses": ["The common pests of rice include stem borers, leaf folders, brown plant hoppers, and rice blast disease. These pests and diseases can be controlled through the use of pesticides or by adopting integrated pest management practices such as crop rotation, use of resistant varieties, and timely sowing and harvesting."]
+}
+
+,{"tag":":Soil_Maize",
+"patterns": ["What is the soil condition for Maize?", "what is the soil for Maize?", "soil condition for Maize?", "Soil for Maize?", "Ph Level for Maize", "Ph range for Maize", "What is the pH Level for Maize?"],
+"responses": ["Maize grows best in well-drained soils that are rich in organic matter with a pH range of 5.5-7.5. It prefers deep soils that are relatively heavy, such as loam or clay soils."]
+}
+,{"tag":":Temperature_Maize",
+"patterns": ["what is the temperature level for Maize?", "Temperature level for Maize?", "Temperature for Maize?",  "Maize Temperature"],
+"responses": ["The ideal temperature range for maize cultivation is 21-29°C (70-85°F) during the growing season, with a minimum temperature of 10°C (50°F) and a maximum temperature of 35°C (95°F)."]
+}
+,{"tag":":Weather_Maize",
+"patterns": ["What is the Weather condition for Maize?", "Weather condition for Maize?", "Weather for Maize?", "Maize Condition"],
+"responses": ["Maize is generally grown in areas with an average annual rainfall of 500-1500 mm (20-60 inches). However, it can also grow in areas with lower rainfall if sufficient irrigation is provided."]
+}
+,{"tag":":Fertilizer_Maize",
+"patterns": ["What are the fertilizers of Maize?", "Fertilizers for Maize?", "Maize fertilizer"],
+"responses": ["Maize requires moderate to high amounts of nitrogen, phosphorus, and potassium fertilizers for optimum growth. The recommended dose is 100-120 kg/ha of nitrogen, 60-80 kg/ha of phosphorus, and 40-60 kg/ha of potassium. Organic fertilizers like farmyard manure can also be used to improve soil fertility."]
+}
+,{"tag":":PestManagement_Maize",
+"patterns": ["Pest Management for Maize?", "Maize pest Management" , "pest for Maize", "Maize pest."],
+"responses": ["The common pests of maize include stem borers, armyworms, cutworms, and corn earworms. These pests can be controlled through the use of pesticides or by adopting integrated pest management practices such as crop rotation, use of resistant varieties, and timely sowing and harvesting."]
+}
+,{"tag":":Soil_Corn",
+"patterns": ["What is the soil condition for Corn?", "what is the soil for Corn?", "soil condition for Corn?", "Soil for Corn?", "Ph Level for Corn", "Ph range for Corn", "What is the pH Level for Corn?"],
+"responses": ["Corn grows best in well-drained soils that are rich in organic matter with a pH range of 5.5-7.5. It prefers deep soils that are relatively heavy, such as loam or clay soils."]
+}
+
+,{"tag":":Temperature_Corn",
+"patterns": ["what is the temperature level for Corn", "Temperature level for Corn?", "Temperature for Corn?", "Maize Temperature"],
+"responses": ["The ideal temperature range for Corn cultivation is 21-29°C (70-85°F) during the growing season, with a minimum temperature of 10°C (50°F) and a maximum temperature of 35°C (95°F)."]
+}
+,{"tag":":Weather_Corn",
+"patterns": ["What is the Weather condition for Corn?", "Weather condition for Corn?", "Weather for Corn?", "Corn Condition"],
+"responses": ["Corn is generally grown in areas with an average annual rainfall of 500-1500 mm (20-60 inches). However, it can also grow in areas with lower rainfall if sufficient irrigation is provided."]
+}
+,{"tag":":Fertilizer_Corn",
+"patterns": ["What are the fertilizers of Corn?", "Fertilizers for Corn?", "Corn fertilizer"],
+"responses": ["Corn requires moderate to high amounts of nitrogen, phosphorus, and potassium fertilizers for optimum growth. The recommended dose is 100-120 kg/ha of nitrogen, 60-80 kg/ha of phosphorus, and 40- 60 kg/ha of potassium. Organic fertilizers like farmyard manure can also be used to improve soil fertility."]
+}
+,{"tag":":PestManagement_Corn",
+"patterns": ["Pest Management for Corn?", "Corn pest Management" , "pest for Corn", "Corn pest"],
+"responses": ["The common pests of Corn include stem borers, armyworms, cutworms, and corn earworms. These pests can be controlled through the use of pesticides or by adopting integrated pest management practices such as crop rotation, use of resistant varieties, and timely sowing and harvesting."]
+}
+,{"tag":":Soil_Barley",
+"patterns": ["What is the soil condition for Barley?", "what is the soil for Barley?", "soil condition for Barley?", "Soil for Barley?", "Ph Level for Barley", "Ph range for Barley", "What is the pH Level for Barley?"],
+"responses": ["Barley grows best in well-drained soils with a pH range of 6.0-7.5. It can grow in a wide range of soil types, including sandy, loamy, and clay soils, but prefers soils that are relatively heavy."]
+}
+,{"tag":":Temperature_Barley",
+"patterns": ["what is the temperature level for Barley?", "Temperature level for Barley?", "Temperature for Barley?", "Barley Temperature"],
+"responses": ["The ideal temperature range for barley cultivation is 15-20°C (59-68°F) during the growing season, with a minimum temperature of 4°C (40°F) and a maximum temperature of 25°C (77°F)."]
+}
+,{"tag":":Weather_Barley",
+"patterns": ["What is the Weather condition for Barley?", "Weather condition for Barley?", "Weather for Barley?", "Barley Condition"],
+"responses": ["Barley is generally grown in areas with an average annual rainfall of 300-600 mm (12-24 inches), but can also grow in areas with higher rainfall if the soil drainage is good."]
+}
+,{"tag":":Fertilizer_Barley",
+"patterns": ["What are the fertilizers of Barley", "Fertilizers for Barley?", "Barley fertilizer"],
+"responses": ["Barley requires moderate amounts of nitrogen, phosphorus, and potassium fertilizers for optimum growth. The recommended dose is 60-90 kg/ha of nitrogen, 30-60 kg/ha of phosphorus, and 30-60 kg/ha of potassium. Organic fertilizers like farmyard manure can also be used to improve soil fertility."]
+}
+,{"tag":":PestManagement_Barley",
+"patterns": ["Pest Management for Barley?", "Barley pest Management" , "pest for Barley", "Barley pest."],
+"responses": ["The common pests of barley include aphids, cereal leaf beetle, and armyworms. These pests can be controlled through the use of pesticides or by adopting integrated pest management practices such as crop rotation, use of resistant varieties, and timely sowing and harvesting."]
+}
+
+,{"tag":":Soil_Oats",
+"patterns": ["What is the soil condition for Oats?", "what is the soil for Oats?", "soil condition for Oats?", "Ph Level for Oats","Ph range for Oats"],
+"responses": ["Oats grow best in well-drained soils that are rich in organic matter with a pH range of 5.0-7.0. They can tolerate a wide range of soil types, including sandy, loamy, and clay soils, but prefer soils that are relatively heavy."]
+}
+,{"tag":":Temperature_Oats",
+"patterns": ["what is the temperature level for Oats?", "Temperature level for Oats?", "Temperature for Oats?"],
+"responses": ["The ideal temperature range for oats cultivation is 15-20°C (59-68°F) during the growing season, with a minimum temperature of 5°C (41°F) and a maximum temperature of 25°C (77°F)."]
+}
+
+,{"tag":":Weather_Oats",
+"patterns": ["What is the Weather condition for Oats?", "Weather condition for Oats?", "Weather for Oats?"],
+"responses": ["Oats are generally grown in areas with an average annual rainfall of 600-1200 mm (24-48inches)."]
+}
+
+,{"tag":":Fertilizer_Oats",
+"patterns": ["What are the fertilizers of Oats?", "Fertilizers for Oats?","Oats fertilizer"],
+"responses": ["Oats are generally grown in areas with an average annual rainfall of 600-1200 mm (24-48inches)."]
+}
+,{"tag":":PestManagement_Oats",
+"patterns": ["Pest Management for Oats?", "Oats pest Management" , "pest for Oats", "Oats pest."],
+"responses": ["The common pests of oats include aphids, oat midge, and armyworms. These pests can be controlled through the use of pesticides or by adopting integrated pest management practices such as crop rotation, use of resistant varieties, and timely sowing and harvesting."]
+}
+,{"tag":":Soil_Rye",
+"patterns": ["What is the soil condition for Rye?", "what is the soil for Rye?", "soil condition for Rye?", "Ph Level for Rye", "Ph range for Rye"],
+"responses": ["Rye can be grown in a wide range of soils, but it prefers well-drained soils with a pH range of 5.5-7.5. It can also tolerate slightly acidic soils with pH as low as 4.5. Rye can grow in sandy or clay soils, but it prefers loamy soils."]
+}
+,{"tag":":Temperature_Rye",
+"patterns": ["what is the temperature level for Rye?", "Temperature level for Rye?", "Temperature for Rye?"],
+"responses": ["The ideal temperature range for rye cultivation is 15-20°C (59-68°F) during the growing season, with a minimum temperature of 0°C (32°F) and a maximum temperature of 30°C (86°F)."]
+}
+,{"tag":":Weather_Rye",
+"patterns": ["What is the Weather condition for Rye?", "Weather condition for Rye?", "Weather for Rye?"],
+"responses": ["Rye is generally grown in areas with an average annual rainfall of 400-800 mm (16-32 inches)."]
+}
+,{"tag":":Fertilizer_Rye",
+"patterns": ["What are the fertilizers of Rye?", "Fertilizers for Rye?", "Rye fertilizer"],
+"responses": ["Rye requires moderate amounts of nitrogen, phosphorus, and potassium fertilizers for optimum growth. The recommended dose is 60-90 kg/ha of nitrogen, 30-60 kg/ha of phosphorus, and 30-60 kg/ha of potassium. Organic fertilizers like farmyard manure can also be used to improve soil fertility."]
+}
+,{"tag":":PestManagement_Rye",
+"patterns": ["Pest Management for Rye?", "Rye pest Management" , "pest for Rye", "Rye pest."],
+"responses": ["The common pests of rye include aphids, armyworms, and cereal leaf beetles.These pests can be controlled through the use of pesticides or by adopting integrated pest management practices such as crop rotation, use of resistant varieties, and timely sowing and harvesting."]
+}
+,{"tag":":Soil_Sorghum",
+"patterns": ["What is the soil condition for Sorghum?", "what is the soil for Sorghum?", "soil condition for Sorghum?", "Ph Level for Sorghum", "Ph range for Sorghum"],
+"responses": ["Sorghum grows best in well-drained soils that are rich in organic matter with a pH range of 6.0-7.5. It can tolerate a wide range of soil types, including sandy, loamy, and clay soils, but prefers soils that are relatively heavy. Sorghum can also tolerate drought and low fertility soils."]
+}
+
+,{"tag":":Temperature_Sorghum",
+"patterns": ["what is the temperature level for Sorghum?", "Temperature level for Sorghum?", "Temperature for Sorghum?"],
+"responses": ["Sorghum requires warm temperatures for optimal growth. The ideal temperature range for sorghum cultivation is 25-35°C (77-95°F) during the growing season, with a minimum temperature of 16°C (61°F) and a maximum temperature of 42°C (108°F)."]
+}
+,{"tag":":Weather_Sorghum",
+"patterns": ["What is the Weather condition for Sorghum?", "Weather condition for Sorghum?", "Weather for Sorghum?"],
+"responses": ["Sorghum is generally grown in areas with an average annual rainfall of 400-800 mm (16-32 inches)."]
+}
+,{"tag":"Fertilizer_Sorghum",
+"patterns": ["What are the fertilizers of Sorghum?", "Fertilizers for Sorghum?", "Sorghum fertilizer"],
+"responses": ["Sorghum requires moderate amounts of nitrogen, phosphorus, and potassium fertilizers for optimum growth. The recommended dose is 60-90 kg/ha of nitrogen, 30-60 kg/ha of phosphorus, and 30-60 kg/ha of potassium. Organic fertilizers like farmyard manure can also be used to improve soil fertility."]
+}
+
+,{"tag":"PestManagement_Sorghum",
+"patterns": ["Pest Management for Sorghum?", "Sorghum pest Management", "pest for Sorghum", "Sorghum pest."],
+"responses": ["The common pests of sorghum include aphids, stem borers, and head bugs.These pests can be controlled through the use of pesticides or by adopting integrated pest management practices such as crop rotation, use of resistant varieties, and timely sowing and harvesting."]
+}
+,{"tag":"Soil_Mango tree",
+"patterns": ["What is the soil condition for Mango tree?","what is the soil for Mango tree?", "soil condition for Mango tree?", "Ph Level for Mango tree", "Ph range for Mango tree"],
+"responses": ["Mango trees grow well in well-drained soils that are rich in organic matter with a pH range of 5.5-7.5. The soil should be deep enough to allow for root development and have good water-holding capacity."]
+}
+
+,{"tag":"Temperature_Mango tree",
+"patterns": ["what is the temperature level for Mango tree?", "Temperature level for Mango tree?", "Temperature for Mango tree?"],
+"responses": ["Mango trees require warm temperatures for optimal growth and fruit production. They grow best in areas with an average temperature range of 24- 27°C (75-81°F) during the growing season, with a minimum temperature of 10°C (50°F)."]
+}
+
+,{"tag":"Weather_Mango tree",
+"patterns": ["What is the Weather condition for Mango tree?", "Weather condition for Mango tree?", "Weather for Mango tree?"],
+"responses": ["Mango trees require a minimum of 500-600 hours of temperatures below 7°C (45°F) during the winter to promote flowering and fruit set."]
+}
+,{"tag":"Fertilizer_Mango tree",
+"patterns": ["What are the fertilizers of Mango tree?", "Fertilizers for Mango tree?", "Mango tree fertilizer"],
+"responses": ["Mango trees require regular applications of nitrogen, phosphorus, and potassium fertilizers for optimal growth and fruit production. The recommended dose is 1-2 kg of nitrogen, 0.5-1 kg of phosphorus, and 1-2 kg of potassium per tree per year. Organic fertilizers like farmyard manure can also be used to improve soil fertility."]
+}
+
+,{"tag":"PestManagement_Mango tree",
+"patterns": ["Pest Management for Mango tree?", "Sorghum pest Management", "pest for Mango tree, Mango tree pest."],
+"responses": ["The common pests of mango trees include mango seed weevils, mango hopper,and fruit flies. These pests can be controlled through the use of pesticides or by adopting integrated pest management practices such as cultural practices, pruning, and biological control."]
+}
+,{"tag":"Soil_Crotons",
+"patterns": ["What is the soil condition for Crotons?", "what is the soil for Crotons?", "soil condition for Crotons?", "Ph Level for Crotons", "Ph range for Crotons."],
+"responses": ["Crotons grow best in well-draining, slightly acidic soil with a pH of 5.5-6.5. They prefer soil that is rich in organic matter and high in nutrients."]
+}
+,{"tag":"Temperature_Crotons",
+"patterns": ["what is the temperature level for Crotons?", "Temperature level for Crotons?", "Temperature for Crotons?"],
+"responses": ["Crotons are tropical plants that require warm temperatures to thrive. They grow best in temperatures between 60-85°F (16-29°C). They can be sensitive to cold temperatures and should be protected from frost."]
+}
+,{"tag":"Weather_Crotons",
+"patterns": ["What is the Weather condition for Crotons?", "Weather condition for Crotons?", "Weather for Crotons?"],
+"responses": ["Crotons prefer bright, indirect light, and they can be grown indoors or outdoors depending on the climate. They should be protected from cold drafts and sudden temperature changes, as they are sensitive to these conditions."]
+}
+,{"tag":"Fertilizer_Crotons",
+"patterns": ["What are the fertilizers of Crotons?", "Fertilizers for Crotons?", "Crotons fertilizer"],
+"responses": ["Crotons require regular fertilization to maintain their vibrant foliage. They benefit from a balanced fertilizer with equal amounts of nitrogen, phosphorus, and potassium, applied every 2-3 months during the growing season. It is important not to over-fertilize, as this can damage the plant."]
+}
+,{"tag":"PestManagement_Crotons",
+"patterns": ["Pest Management for Crotons?", "Crotons pest Management" , "pest for Crotons, Crotons pest."],
+"responses": ["Crotons can be susceptible to pests such as mealybugs, spider mites, and scale insects. These can be controlled through the use of insecticidal soap or neem oil."]
+}
+,{"tag":"Soil_Pepper",
+"patterns": ["What is the soil condition for pepper? what is the soil for pepper? soil condition for pepper? Ph Level for pepper, Ph range for pepper"],
+"responses": ["Peppers prefer well-draining soil with a pH between 6.0 and 7.0. It is important to amend the soil with organic matter, such as compost or aged manure, to provide nutrients and improve soil structure."]
+}
+,{"tag":"Temperature_Pepper",
+"patterns": ["what is the temperature level for pepper? Temperature level for pepper? Temperature for pepper?"],
+"responses": ["Peppers are warm-weather plants and require temperatures above 60°F (15°C) to grow. The ideal temperature range for peppers is between 70°F and 85°F (21°C to 29°C). In cooler climates, peppers can be grown in a greenhouse or started indoors before being transplanted outside."]
+}
+
+,{"tag":"Weather_Pepper",
+"patterns": ["What is the Weather condition for pepper?", "Weather condition for pepper?", "Weather for pepper?"],
+"responses": ["Peppers require consistent moisture, but should not be over-watered as this can lead to root rot. They also require full sun, at least 6-8 hours per day."]
+}
+,{"tag":"Fertilizer_Pepper",
+"patterns": ["What are the fertilizers of pepper?", "Fertilizers for pepper?", "pepper fertilizer"],
+"responses": ["Peppers are heavy feeders and require regular fertilization to produce a good yield. A balanced fertilizer with equal amounts of nitrogen, phosphorus, and potassium can be applied every 4-6 weeks during the growing season. Organic fertilizers such as fish emulsion, compost tea, or bone meal can also be used."]
+}
+,{"tag":"PestManagement_Pepper",
+"patterns": ["Pest Management for pepper?", "pepper pest Management" , "pest for pepper, pepper pest."],
+"responses": ["Common pests that can affect peppers include aphids, spider mites, and whiteflies. These pests can be controlled with insecticidal soap or neem oil. Diseases such as blossom end rot and bacterial spot can also affect peppers, and can be prevented by providing consistent moisture and good air circulation."]
+}
+
+,{"tag":"Soil_Tea",
+"patterns": ["What is the soil condition for Tea?", "what is the soil for Tea?", "soil condition for Tea?", "Ph Level for Tea", "Ph range for Tea"],
+"responses": ["Tea plants prefer well-draining acidic soil with a pH between 4.5 and 5.5. The soil should also be rich in organic matter and have good moisture retention."]
+}
+,{"tag":"Temperature_Tea",
+"patterns": ["what is the temperature level for Tea?", "Temperature level for Tea?"," Temperature for Tea?"],
+"responses": ["Tea plants thrive in warm, humid climates and require an average temperature of 65°F to 75°F (18°C to 24°C). They can tolerate light frost but are sensitive to extreme heat."]
+}
+,{"tag":"Weather_Tea",
+"patterns": ["What is the Weather condition for Tea?", "Weather condition for Tea?"," Weather for Tea?"],
+"responses": ["Tea plants require consistent moisture and prefer a humid environment. They also require partial shade and protection from strong winds."]
+}
+,{"tag":"Fertilizer_Tea",
+"patterns": ["What are the fertilizers of Tea?", "Fertilizers for Tea?", "Tea fertilizer?"],
+"responses": ["Tea plants are light feeders and require moderate amounts of nitrogen, phosphorus, and potassium. A balanced fertilizer with a ratio of 10-5-5 can be applied once or twice a year in the spring and fall."]
+}
+,{"tag":"PestManagement_Tea",
+"patterns": ["Pest Management for Tea?", "Tea pest Management", "pest for Tea", "Tea pest?"],
+"responses": ["Common pests that can affect tea plants include tea mosquito, tea tortrix, and tea red spider mite. These pests can be controlled with insecticidal soap or neem oil. Diseases such as tea leaf rust and tea mosquito can also affect tea plants, and can be prevented by providing good air circulation and avoiding overcrowding of plants."]
+}
+,{"tag":"Soil_Coffee",
+"patterns": ["What is the soil condition for Coffee? ","what is the soil for Coffee?","soil condition for Coffee?", "Ph Level for Coffee?", "Ph range for Coffee"],
+"responses": ["Coffee plants prefer well-draining soil with a pH between 6.0 and 6.5. The soil should also be rich in organic matter and have good moisture retention."]
+}
+,{"tag":"Temperature_Coffee",
+"patterns": ["what is the temperature level for Coffee?", "Temperature level for Coffee?", "Temperature for Coffee?"],
+"responses": ["Coffee plants thrive in warm, humid climates and require an average temperature of 65°F to 75°F (18°C to 24°C). They can tolerate light frost but are sensitive to extreme heat."]
+}
+,{"tag":"Temperature_Coffee",
+"patterns": ["what is the temperature level for Coffee?", "Temperature level for Coffee?", "Temperature for Coffee?"],
+"responses": ["Coffee plants thrive in warm, humid climates and require an average temperature of 65°F to 75°F (18°C to 24°C). They can tolerate light frost but are sensitive to extreme heat."]
+}
+,{"tag":"Weather_Coffee",
+"patterns": ["What is the Weather condition for Coffee?", "Weather condition for Coffee?","Weather for Coffee?"],
+"responses": ["Coffee plants require consistent moisture and prefer a humid environment. They also require partial shade and protection from strong winds."]
+}
+,{"tag":"Fertilizer_Coffee",
+"patterns": ["What are the fertilizers of Coffee?", "Fertilizers for Coffee?", "Coffee fertilizer?"],
+"responses": ["Coffee plants require moderate amounts of nitrogen, phosphorus, and potassium. A balanced fertilizer with a ratio of 10-10-10 can be applied every 2-3 months during the growing season."]
+}
+,{"tag":"PestManagement_Coffee",
+"patterns": ["Pest Management for Coffee?", "Coffee pest Management,", "pest for Coffee?,", "Coffee pest?"],
+"responses": ["Common pests that can affect coffee plants include coffee berry borer, leaf miner, and coffee white stem borer. These pests can be controlled with insecticidal soap or neem oil. Diseases such as coffee leaf rust and coffee berry disease can also affect coffee plants, and can be prevented by providing good air circulation and avoiding overcrowding of plants."]
+}
+,{"tag":"Soil_Hibiscus",
+"patterns": ["What is the soil condition for Hibiscus?", "what is the soil for Hibiscus?","soil condition for Hibiscus?", "Ph Level for Hibiscus?", "Ph range for Hibiscus"],
+"responses": ["Hibiscus plants prefer well-draining soil that is rich in organic matter. A soil pH between 6.0 and 7.0 is ideal for hibiscus."]
+}
+,{"tag":"Temperature_Hibiscus",
+"patterns": ["what is the temperature level for Hibiscus?", "Temperature level for Hibiscus?", "Temperature for Hibiscus?"],
+"responses": ["Hibiscus plants are tropical in nature and prefer warm temperatures between 60-90°F (15- 32°C). They cannot tolerate frost or freezing temperatures."]
+}
+,{"tag":"Weather_Hibiscus",
+"patterns": ["What is the Weather condition for Hibiscus?", "Weather condition for Hibiscus?", "Weather for Hibiscus?"],
+"responses": ["Hibiscus plants require regular watering, especially during hot and dry weather. They do not like to be waterlogged, so it is important to ensure proper drainage."]
+}
+,{"tag":"Fertilizer_Hibiscus",
+"patterns": ["What are the fertilizers of Hibiscus", "Fertilizers for Hibiscus?", "Hibiscus fertilizer?"],
+"responses": ["Hibiscus plants require regular fertilization to promote healthy growth and blooming. Use a balanced fertilizer with equal amounts of nitrogen, phosphorus, and potassium. Fertilize every two to four weeks during the growing season and reduce frequency during the dormant season "]
+}
+,{"tag":"PestManagement_Hibiscus",
+"patterns": ["Pest Management for Hibiscus?", "Hibiscus pest Management?", "pest for Hibiscus?", "Hibiscus pest?"],
+"responses": ["Hibiscus plants can be susceptible to pests such as aphids, whiteflies, and spider mites. Regular monitoring and treatment with insecticidal soap or neem oil can help prevent infestations. Hibiscus plants can also be susceptible to fungal diseases, so it is important to avoid overwatering and to provide good air circulation around the plant."]
+}
+,{"tag":"Soil_Bougainvillea",
+"patterns": ["What is the soil condition for Bougainvillea?", "what is the soil for Bougainvillea?", "soil condition for Bougainvillea?", "Ph Level for Bougainvillea?", "Ph range for Bougainvillea?"],
+"responses": ["Bougainvillea plants prefer well-draining soil with a slightly acidic to neutral pH (around 6.0 to 7.0). The soil should be moist but not waterlogged."]
+}
+,{"tag":"Soil_Bougainvillea",
+"patterns": ["What is the soil condition for Bougainvillea?", "what is the soil for Bougainvillea?", "soil condition for Bougainvillea?", "Ph Level for Bougainvillea?", "Ph range for Bougainvillea?"],
+"responses": ["Bougainvillea plants prefer well-draining soil with a slightly acidic to neutral pH (around 6.0 to 7.0). The soil should be moist but not waterlogged."]
+}
+,{"tag":"Temperature_Bougainvillea",
+"patterns": ["what is the temperature level for Bougainvillea?", "Temperature level for Bougainvillea?", "Temperature for Bougainvillea?"],
+"responses": ["Bougainvillea plants prefer warm temperatures between 60- 85°F (15-29°C). They can tolerate some cold temperatures, but they do not like frost."]
+}
+,{"tag":"Weather_Bougainvillea",
+"patterns": ["What is the Weather condition for Bougainvillea?","Weather condition for Bougainvillea?", "Weather for Bougainvillea?"],
+"responses": ["Bougainvillea plants require regular watering, especially during hot and dry weather. They do not like to be waterlogged, so it is important to ensure proper drainage."]
+}
+,{"tag":"Fertilizer_Bougainvillea",
+"patterns": ["What are the fertilizers of Bougainvillea?", "Fertilizers for Bougainvillea?", "Bougainvillea fertilizer?"],
+"responses": ["Bougainvillea plants require regular fertilization to promote healthy growth and blooming. Use a balanced fertilizer with equal amounts of nitrogen, phosphorus, and potassium. Fertilize every two to four weeks during the growing season and reduce frequency during the dormant season."]
+}
+,{"tag":"PestManagement_Bougainvillea",
+"patterns": ["Pest Management for Bougainvillea?", "Bougainvillea pest Management?", "pest for Bougainvillea", "Bougainvillea pest?"],
+"responses": ["Bougainvillea plants require regular fertilization to promote healthy growth and blooming. Use a balanced fertilizer with equal amounts of nitrogen, phosphorus, and potassium. Fertilize every two to four weeks during the growing season and reduce frequency during the dormant season."]
+}
+,{"tag":"Soil_Aloevera",
+"patterns": ["What is the soil condition for Aloe vera?", "what is the soil for Aloe vera?", "soil condition for Aloe vera?", "Ph Level for Aloe vera?", "Ph range for Aloe vera"],
+"responses": ["Aloe vera plants prefer well-draining soil with a pH between 6.0 and 7.0. A mixture of sand and loam soil is recommended, with the addition of perlite or gravel to improve drainage."]
+}
+,{"tag":"Temperature_Aloevera",
+"patterns": ["what is the temperature level for Aloe vera?", "Temperature level for Aloe vera?", "Temperature for Aloe vera?"],
+"responses": ["Aloe vera plants prefer warm temperatures between 60-85°F (15-29°C). They can tolerate some cold temperatures, but they do not like frost."]
+}
+,{"tag":"Weather_Aloevera",
+"patterns": ["What is the Weather condition for Aloe vera?", "Weather condition for Aloe vera?", "Weatherfor Aloe vera?"],
+"responses": ["Aloe vera plants require little watering and can tolerate dry weather conditions. Overwatering can lead to root rot, so it’s important to allow the soil to dry out before watering again."]
+}
+,{"tag":"Fertilizer_Aloevera",
+"patterns": ["What are the fertilizers of Aloe vera?", "Fertilizers for Aloe vera?", "Aloe vera fertilizer?"],
+"responses": ["Aloe vera plants do not require much fertilizer. A small amount of a balanced fertilizer can be applied every few months during the growing season."]
+}
+,{"tag":"PestManagement_Aloevera",
+"patterns": ["Pest Management for Aloe vera?", "Aloe vera pest Management?", "pest for Aloe vera, Aloe vera pest?"],
+"responses": ["Aloe vera plants are relatively pest-resistant, but they can occasionally be affected by mealybugs, scale insects, or spider mites. Regular monitoring and treatment with insecticidal soap or neem oil can help prevent infestations. Overwatering can also lead to fungal diseases, so it is important to avoid overwatering and provide good air circulation around the plant."]
+}
+,{"tag":"Soil_Arecapalm",
+"patterns": ["What is the soil condition for Areca palm?", "what is the soil for Areca palm?", "soil condition for Areca palm?", "Ph Level for Areca palm?", "Ph range for Areca palm?"],
+"responses": ["Areca palms prefer well-draining soil that is rich in organic matter. A mixture of peat moss, sand,and perlite can work well. The soil pH should be between 6.0 and 7.0."]
+}
+,{"tag":"Temperature_Arecapalm",
+"patterns": ["what is the temperature level for Areca palm?", "Temperature level for Areca palm?","Temperature for Areca palm?"],
+"responses": ["Areca palms prefer well-draining soil that is rich in organic matter. A mixture of peat moss, sand,and perlite can work well. The soil pH should be between 6.0 and 7.0."]
+}
+,{"tag":"Weather_ Arecapalm",
+"patterns": ["What is the Weather condition for Areca palm?", "Weather condition for Areca palm?", "Weather for Areca palm?"],
+"responses": ["Areca palms thrive in high humidity environments. They require bright, indirect light and should be protected from direct sunlight. They should also be sheltered from strong winds and drafts."]
+}
+,{"tag":"Fertilizer_ Arecapalm",
+"patterns": ["What are the fertilizers of Areca palm?"," Fertilizers for Areca palm?"," Areca palm fertilizer"],
+"responses": ["Areca palms should be fertilized with a balanced fertilizer every month during the growing season (spring and summer). A slow-release fertilizer can also be used.Avoid over-fertilizing as this can lead to leaf burn."]
+}
+,{"tag":"PestManagement_Arecapalm",
+"patterns": ["Pest Management for Areca palm?","Areca palm pest Management" , "pest for Areca palm" ," Areca palm pest."],
+"responses": ["Areca palms are susceptible to spider mites, mealybugs, and scale insects. Regular inspection and treatment with insecticidal soap or neem oil can help prevent infestations. Avoid overwatering and provide good air circulation to prevent fungal diseases"]
+}
+,{"tag":"Soil_Marigold",
+"patterns": ["What is the soil condition for Marigold?"," what is the soil for Marigold?", "soil condition for Marigold?"," Ph Level for Marigold"," Ph range for Marigold"],
+"responses": ["Marigolds prefer well-drained soil with a pH between 6.0 and 7.5. They can tolerate a wide range of soil types, from sandy to clayey."]
+}
+,{"tag":"Temperature_Marigold",
+"patterns": ["what is the temperature level for Marigold?"," Temperature level for Marigold?","Temperature for Marigold?"],
+"responses": ["Marigolds thrive in warm weather and full sun with daytime temperatures between 70°F and 80°F (21°C to 27°C). They can tolerate some drought and heat stress, but require consistent watering during dry periods to prevent wilting and stress."]
+}
+,{"tag":"Weather_Marigold",
+"patterns": ["What is the Weather condition for Marigold?", "Weather condition for Marigold?", "Weather for Marigold?"],
+"responses": ["Marigolds thrive in warm weather and full sun, with daytime temperatures between 70°F and 80°F (21°C to 27°C)."]
+}
+,{"tag":"Fertilizer_Marigold",
+"patterns": ["What are the fertilizers of Marigold?", "Fertilizers for Marigold?", "Marigold fertilizer?"],
+"responses": ["Marigolds are not heavy feeders and can grow well with moderate fertilization. A balanced fertilizer with an NPK ratio of 10-10-10 or 20-20-20 can be applied once a month during the growing season.Organic fertilizers like compost or aged manure can also be used."]
+}
+,{"tag":"PestManagement_Marigold",
+"patterns": ["Pest Management for Marigold?", "Marigold pest Management?", "pest for Marigold?", "Marigold pest?"],
+"responses": ["Marigolds are generally pest-resistant, but can be attacked by aphids, spider mites, and whiteflies.Insecticidal soap or neem oil can be used to control these pests.Marigolds are also susceptible to fungal diseases like powdery mildew, which can be prevented by maintaining good air circulation around the plants and avoiding overhead watering."]
+}
+,{"tag":"Soil_Neemtree",
+"patterns": ["What is the soil condition for Neemtree?", "what is the soil for Neemtree?", "soil condition for Neemtree?", "Ph Level for Neemtree?", "Ph range for Neemtree?"],
+"responses": ["Neem trees prefer well-drained, loamy soils with a pH between 6.2 and 7.0. They can tolerate poor soils, but may not grow as vigorously."]
+}
+,{"tag":"Temperature_Neemtree",
+"patterns": ["What is the Weather condition for Neemtree?", "Weather condition for Neemtree?", "Weather for Neemtree?"],
+"responses": ["temperatures that require between 68°F and 104°F (20°C to 40°C)."]
+}
+,{"tag":"Weather_Neemtree",
+"patterns": ["what is the temperature level for Neemtree?", "Temperature level for Neemtree?", "Temperature for Neemtree?"],
+"responses": ["Neem trees are tropical and subtropical plants that thrive in warm weather and full sun"]
+}
+,{"tag":"Fertilizer_Neemtree",
+"patterns": ["What are the fertilizers of Neemtree?", "Fertilizers for Neemtree?", "Neemtree fertilizer?"],
+"responses": ["Neem trees are not heavy feeders and can grow well with moderate fertilization. Abalanced fertilizer with an NPK ratio of 10-10-10 or 20-20-20 can be applied once or twice a year, but excessive nitrogen can lead to excessive vegetative growth at the expense of flowering and fruiting. Organic fertilizers like compost or aged manure can also be used."]
+}
+,{"tag":"PestManagement_Neemtree",
+"patterns": ["Pest Management for Neemtree?", "Neemtree pest Management?", "pest for Neemtree?", "Neemtree pest?"],
+"responses": ["Neem trees are known for their insecticidal and fungicidal properties and can help control pests and diseases in other plants. However, they can be attacked by some pests like mealybugs, scale insects, and spider mites. Horticultural oil or insecticidal soap can be used to control these pests Neem trees can also be susceptible to fungal diseases like anthracnose and powdery mildew, which can be prevented by maintaining good air circulation around the tree and avoiding overhead watering."]
+}
+,{"tag":"Soil_Neem",
+"patterns": ["What is the soil condition for Neem?", "what is the soil for Neem?", "soil condition for Neem?", "Ph Level for Neem?", "Ph range for Neem?"],
+"responses": ["Neem trees prefer well-drained, loamy soils with a pH between 6.2 and 7.0. They can tolerate poor soils, but may not grow as vigorously."]
+}
+,{"tag":"Temperature_Neem",
+"patterns": ["What is the Weather condition for Neem?", "Weather condition for Neem?", "Weather for Neem?"],
+"responses": ["temperatures that require between 68°F and 104°F (20°C to 40°C)."]
+}
+,{"tag":"Weather_Neem",
+"patterns": ["what is the temperature level for Neem?", "Temperature level for Neem?", "Temperature for Neem?"],
+"responses": ["Neem trees are tropical and subtropical plants that thrive in warm weather and full sun"]
+}
+,{"tag":"Fertilizer_Neem",
+"patterns": ["What are the fertilizers of Neem?", "Fertilizers for Neem?", "Neem fertilizer?"],
+"responses": ["Neem trees are not heavy feeders and can grow well with moderate fertilization. Abalanced fertilizer with an NPK ratio of 10-10-10 or 20-20-20 can be applied once or twice a year, but excessive nitrogen can lead to excessive vegetative growth at the expense of flowering and fruiting. Organic fertilizers like compost or aged manure can also be used."]
+}
+,{"tag":"PestManagement_Neem",
+"patterns": ["Pest Management for Neem?", "Neem pest Management?", "pest for Neem?", "Neem pest?"],
+"responses": ["Neem trees are known for their insecticidal and fungicidal properties and can help control pests and diseases in other plants. However, they can be attacked by some pests like mealybugs, scale insects, and spider mites. Horticultural oil or insecticidal soap can be used to control these pests Neem trees can also be susceptible to fungal diseases like anthracnose and powdery mildew, which can be prevented by maintaining good air circulation around the tree and avoiding overhead watering."]
+}
+,{"tag":"Soil_Money plant",
+"patterns": ["What is the soil condition for Money plant?", "what is the soil for Money plant?", "soil condition for Money plant?", "Ph Level for Money plant?", "Ph range for Money plant?"],
+"responses": ["Money plant, also known as Devil, can grow in a variety of soils, but it prefers well-draining soil with a pH between 6 and 7.5. It can grow in sandy, loamy, or clay soils."]
+}
+,{"tag":"Temperature_Money plant",
+"patterns": ["what is the temperature level for Money plant?", "Temperature level for Money plant?","Temperature for Money plant?"],
+"responses": ["Money plant prefers a warm temperature range of 18-28°C during the day and above 10°C at night. It can tolerate temperatures as low as 5°C, but extreme heat can damage the leaves."]
+}
+,{"tag":"Weather_Money plant",
+"patterns": ["What is the Weather condition for Money plant?", "Weather condition for Money plant?","Weather for Money plant?"],
+"responses": ["Money plant can grow in a range of weather conditions, but it prefers a warm and humid climate.It can tolerate partial shade, but it prefers bright indirect sunlight."]
+}
+,{"tag":"Fertilizer_Money Plant",
+"patterns": ["What are the fertilizers of Money plant?", "Fertilizers for Money plant?", "Money plant fertilizer"],
+"responses": ["Money plant does not require much fertilizer, but it can benefit from occasional feeding with a balanced fertilizer during the growing season. Too much fertilizer can lead to excessive growth, so it’s important to follow the manufacturer’s instructions."]
+}
+,{"tag":"PestManagement_Money plant",
+"patterns": ["Pest Management for Money plant?", "Money plant pest Management?", "pest for Money plant, Money plant pest."],
+"responses": ["Money plant is relatively resistant to pests, but it can occasionally be attacked by mealybugs, spider mites, and scale insects. These can be controlled with insecticidal soap or neem oil. Overwatering can also lead to root rot, so it&amp;#39;s important to ensure the soil is well-draining."]
+}
+,{"tag":"Soil_Curryleaves",
+"patterns": ["What is the soil condition for Curry leaves ?", "what is the soil for Curry leaves ?", "soil condition for Curry leaves ?", "Ph Level for Curry leaves" , "Ph range for Curry leaves"],
+"responses": ["Curry leaf plants grow best in well-drained soil with a pH between 6.0 and 7.0. They prefer a soil that is rich in organic matter, so adding compost or well-rotted manure to the soil is recommended."]
+}
+,{"tag":"Temperature_Curry leaves",
+"patterns": ["what is the temperature level for Curry leaves ?", "Temperature level for Curry leaves ?", "Temperature for Curry leaves ?"],
+"responses": ["Curry leaf plants prefer warm temperatures between 70-90°F (21-32°C).They can tolerate some cooler temperatures, but they do not like frost."]
+}
+
+,{"tag":"Weather_Curryleaves",
+"patterns": ["What is the Weather condition for Curry leaves ?", "Weather condition for Curry leaves ?", "Weather for Curry leaves ?"],
+"responses": ["Curry leaf plants prefer humid conditions, so it’s important to keep the soil consistently moist but not waterlogged. They also prefer bright, indirect sunlight and protection from strong winds."]
+}
+,{"tag":"Fertilizer_Curryleaves",
+"patterns": ["What are the fertilizers of Curry leaves ?", "Fertilizers for Curry leaves?", "Curry leaves fertilizer"],
+"responses": ["Curry leaf plants benefit from regular fertilization during the growing season. A balanced fertilizer can be applied every few weeks to promote healthy growth and development."]
+}
+,{"tag":"PestManagement_Curryleaves",
+"patterns": ["Pest Management for Curry leaves ?", "Curry leaves pest Management" , "pest for Curry leaves" , "Curry leaves pest."],
+"responses": ["Curry leaf plants can be susceptible to mealybugs, scale insects, and spider mites. Regular monitoring and treatment with insecticidal soap or neem oil can help prevent infestations. Overwatering or poor air circulation can also lead to fungal diseases, so it is important to provide good drainage and air flow around the plant."]
+}
+
+,{"tag":"Soil_Onion",
+"patterns": ["What is the soil condition for Onion ?", "what is the soil for Onion ?", "soil condition for Onion ?", "Ph Level for Onion ,", "Ph range for Onion"],
+"responses": ["Onions prefer well-draining, loose soil with a pH of 6.0 to 6.8. The soil should be rich in organic matter, and nitrogen should be readily available."]
+}
+,{"tag":"Temperature_Onion",
+"patterns": [" what is the temperature level for Onion? ","Temperature level for Onion?", "Temperature for Onion?"],
+"responses": [" Onions can be grown in a wide range of temperatures, but they prefer temperatures between 13°C to 25°C. High temperatures can reduce yields and cause the onions to bolt."]
+}
+,{"tag":"Weather_Onion",
+"patterns": ["What is the Weather condition for Onion?",  "Weather condition for Onion?", "Weather for Onion ?"],
+"responses": [" Onions need plenty of sunshine and moderate rainfall. Too much rain can cause the onions to rot, while too little rain can reduce yields."]
+}
+
+,{"tag":"Fertilizer_Onion",
+"patterns": ["What are the fertilizers of Onion ?", "Fertilizers for Onion?", "Onion fertilizer"],
+"responses": [" Onions need nitrogen, phosphorus, and potassium. A balanced fertilizer with an NPK ratio of 10-10-10 is a good choice for onions. However, too much nitrogen can lead to excessive foliage growth and small bulbs."]
+}
+
+,{"tag":"PestManagement_Onion",
+"patterns": ["Pest Management for Onion ?", "Onion  pest Management" , "pest for Onion ,", "Onion pest"],
+"responses": [" Common pests that affect onions include thrips, onion maggots, and cutworms. Crop rotation, use of insecticidal soap, and planting disease-resistant varieties can help control pests."]
+}
+
+,{"tag":"Soil_Cardamom",
+"patterns": ["What is the soil condition for Cardamom ?", "what is the soil for Cardamom ?", "soil condition for Cardamom ?", "Ph Level for Cardamom , Ph range for Cardamom"],
+"responses": [" Cardamom grows best in well-drained, loamy soil with a pH between 5.0 and 7.5. The soil should also be rich in organic matter."]
+}
+,{"tag":"Soil_Turmeric",
+"patterns": ["What is the soil condition for Turmeric ?", "what is the soil for Turmeric ?", "soil condition for Turmeric ?", "Ph Level for Turmeric , Ph range for Turmeric "],
+"responses": [" Turmeric can be grown in a wide range of soils, but it thrives best in well-drained soils that are rich in organic matter. The soil should have a pH level between 4.5 and 7.5."]
+}
+
+,{"tag":"temperature_Turmeric",
+"patterns": ["what is the temperature level for Turmeric?", "Temperature level for Turmeric?", "Temperature for Turmeric?"],
+"responses": [" Turmeric thrives in warm and humid tropical climates with temperature ranging between 20°C to 30°C. The plant is sensitive to cold temperatures and frost, so it should not be exposed to temperatures below 18°C."]
+}
+,{"tag":"Weather_Turmeric",
+"patterns": ["What is the Weather condition for Turmeric?",  "Weather condition for Turmeric?", "Weather for Turmeric ?"],
+"responses": [" Turmeric requires plenty of rainfall, ranging from 1500 mm to 2000 mm per annum. The plant grows best in areas that receive rainfall during the growing season. It is susceptible to waterlogging, so the soil should be well-drained"]
+}
+,{"tag":"Fertilizer_Turmeric",
+"patterns": ["What are the fertilizers of Turmeric ?", "Fertilizers for Turmeric?", "Turmeric fertilizer"],
+"responses": [" Turmeric requires moderate amounts of fertilizer. Organic fertilizers such as cow dung and compost can be applied during the planting stage, and chemical fertilizers can be applied during the growing season."]
+}
+,{"tag":"PestManagement _Turmeric",
+"patterns": ["Pest Management for Turmeric ?", "Turmeric pest Management", "pest for Turmeric" , "Turmeric pest."],
+"responses": [" Turmeric is susceptible to pests such as shoot borer, rhizome scale, and leaf roller. It is important to monitor the crop regularly for signs of infestation and take appropriate measures to control the pests. Neem oil and other organic insecticides can be used for control"]
+}
+
+,{"tag":"Soil_Soybean",
+"patterns": ["What is the soil condition for Soybean?", "what is the soil for Soybean? soil condition for Soybean ?", "Ph Level for Soybean" , "Ph range for Soybean"],
+"responses": ["Soybean grows well in well-drained soils with a pH range of 6.0 to 7.0. It is not tolerant of saline or alkaline soils."]
+}
+,{"tag":"Temperature_Soybean",
+"patterns": ["what is the temperature level for Soybean?", "Temperature level for Soybean?", "Temperature for Soybean?"],
+"responses": ["The ideal temperature range for soybean growth is between 20°C to 30°C. Soybean plants cannot withstand frost, and extreme heat during flowering can result in flower drop and reduced yields."]
+}
+,{"tag":"Weather_Soybean",
+"patterns": ["What is the Weather condition for Soybean?",  "Weather condition for Soybean?", "Weather for Soybean ?"],
+"responses": ["Soybean requires adequate rainfall or irrigation during the growing season. However, waterlogging can lead to reduced yields and disease problems."]
+}
+,{"tag":"Fertilizer_Soybean",
+"patterns": ["What are the fertilizers of Soybean ?", "Fertilizers for Soybean ?", "Soybean fertilizer"],
+"responses": ["Soybean plants require nitrogen, phosphorus, and potassium for optimal growth. The amount of fertilizer required depends on the soil fertility and the yield goal."]
+}
+
+,{"tag":"PestManagement _Soybean",
+"patterns": ["Pest Management for Soybean ?", "Soybean pest Management" , "pest for Soybean", "Soybean pest."],
+"responses": ["Soybean plants are susceptible to a wide range of pests, including soybean aphids, soybean cyst nematode, and various types of caterpillars. Integrated pest management practices can help manage these pests effectively."]
+}
+,{"tag":"Soil_Sunflower",
+"patterns": [" What is the soil condition for Sunflower?", "what is the soil for Sunflower?", "soil condition for Sunflower ?", "Ph Level for Sunflower" , "Ph range for Sunflower"],
+"responses": ["Sunflowers prefer well-drained soil with a pH of 6.0 to 7.5. They can tolerate poor soil conditions but may produce lower yields."]
+}
+,{"tag":"Temperature_Sunflower",
+"patterns": [" what is the temperature level for Sunflower?", "Temperature level for Sunflower?", "Temperature for Sunflower?"],
+"responses": ["Sunflowers grow best in warm temperatures between 70-78°F (21-26°C). They can tolerate temperatures up to 100°F (38°C) and can survive light frost"]
+}
+,{"tag":"Weather_Sunflower",
+"patterns": ["What is the Weather condition for Sunflower?",  "Weather condition for Sunflower?", "Weather for Sunflower ?"],
+"responses": ["Sunflowers require a lot of sunlight and can handle drought conditions, but excess moisture can lead to diseases such as downy mildew."]
+}
+,{"tag":" Fertilizer_Sunflower",
+"patterns": ["What are the fertilizers of Sunflower ?", "Fertilizers for Sunflower ?", "Sunflower fertilizer"],
+"responses": ["Sunflowers require nitrogen, phosphorus, and potassium for optimal growth. A balanced fertilizer with an NPK ratio of 10-10-10 is recommended. Fertilizer should be applied before planting and again when the plants reach a height of 6-8 inches (15-20cm)."]
+}
+,{"tag":" PestManagement _Sunflower",
+"patterns": ["Pest Management for Sunflower ?", "Sunflower pest Management ", "pest for Sunflower" , "Sunflower pest"],
+"responses": [" Sunflowers are susceptible to pests such as aphids, sunflower beetles, and stem weevils. Proper crop rotation and early detection can help prevent pest infestations. Insecticides may be required if infestations are severe."]
+}
+
+,{"tag":" Soil_ Peanut",
+"patterns": [" What is the soil condition for Peanut?", "what is the soil for Peanut?", "soil condition for Peanut?","Ph Level for peanut" , "Ph range for peanut"],
+"responses": ["Peanuts grow best in well-drained sandy loam or sandy soils with a pH between 5.8 and 6.2."]
+}
+,{"tag":"Temperature_ Peanut",
+"patterns": ["what is the temperature level for Peanut?", "Temperature level for Peanut?", "Temperature for Peanut?"],
+"responses": ["Peanuts require warm temperatures to grow, with an ideal temperature range of 25-30°C during the day and 20-22°C at night. Frost or prolonged cold temperatures can damage the plants."]
+}
+,{"tag":"Weather_ Peanut",
+"patterns": ["What is the Weather condition for Peanut?",  "Weather condition for Peanut?", "Weather for Peanut ?"],
+"responses": ["Peanuts require a moderate amount of rainfall, ideally between 500-600mm per year, and consistent sunshine to grow properly. Drought can severely affect yields"]
+}
+
+,{"tag":"Fertilizer_ Peanut",
+"patterns": ["What are the fertilizers of Peanut ?", "Fertilizers for Peanut ?", "Peanut fertilizer"],
+"responses": ["Peanuts require nitrogen, phosphorus, and potassium. A balanced fertilizer with an NPK ratio of 8-24-24 is recommended. It is also important to apply lime to the soil to maintain a pH within the recommended range."]
+}
+,{"tag":" PestManagement _ Peanut",
+"patterns": ["Pest Management for Peanut ?", "Peanut pest Management", "pest for Peanut" , "Peanutpest."],
+"responses": ["Some common pests that affect peanuts include thrips, aphids, cutworms, armyworms, and mites. Cultural practices such as crop rotation and proper sanitation can help control pests. Insecticides can also be used if needed, but care should be taken to avoid harming beneficial insects such as bees."]
+}
+,{"tag":"Soil_ Mustard",
+"patterns": [" What is the soil condition for Mustard?", "what is the soil for Mustard?", "soil condition for Mustard?", "Ph Level for Mustard", "Ph range for Mustard"],
+"responses": ["Mustard plants can grow in a wide range of soils, but they prefer well-drained soils with good organic matter content. The ideal pH range for mustard cultivation is between 6.0 and 7.5."]
+}
+,{"tag":"Temperature_ Mustard",
+"patterns": ["what is the temperature level for Mustard?", "Temperature level for Mustard?", "Temperature for Mustard?"],
+"responses": [" Mustard grows best in a temperature range of 20-25°C during the day and 15-20°C at night. Higher temperatures can cause bolting and reduce seed yield"]
+}
+,{"tag":"Weather_ Mustard",
+"patterns": ["What is the Weather condition for Mustard?",  "Weather condition for Mustard?", "Weather for Mustard?"],
+"responses": ["Mustard requires adequate rainfall or irrigation during the growing season. It is a cool-season crop and can tolerate light frost."]
+}
+
+,{"tag":"Fertilizer_ Mustard",
+"patterns": ["What are the fertilizers of Mustard ?", "Fertilizers for Mustard? Mustard fertilizer"],
+"responses": ["Mustard requires nitrogen, phosphorus, and potassium for optimal growth. It is recommended to apply 60-80 kg/ha of nitrogen, 40-60 kg/ha of phosphorus, and 20-40 kg/ha of potassium. Organic manure can also be used to provide essential nutrients."]
+}
+
+,{"tag":"PestManagement _ Mustard",
+"patterns": ["Pest Management for Mustard? Mustard pest Management" , "pest for Mustard" , "Mustard pest."],
+"responses": ["Mustard crops can be affected by various pests, including aphids, flea beetles, cutworms, and caterpillars. Crop rotation and the use of insecticides can help control these pests. It is important to follow good agricultural practices to prevent pest infestations."]
+}
+
+,{"tag":"soil_fertility",
+"patterns": ["How to improve soil fertility for better crop yields?","improve soil fertility?","better yield?", "Soil fertility improvement for yield", "soil fertility improvement" , "soil fertility"],
+"responses": ["Adding organic ,Soil testing ,Crop rotation,Using fertilizer Controlling soil erosion"]
+}
+,{"tag":"soil_erosion",
+"patterns": ["how to control soil erosion?control for soil erosion" , "soil erosion contro"],
+"responses": ["Soil erosion can deplete the topsoil and reduce soil fertility.Implementing conservation practices such as cover crops, reduced tillage, and terrace farming can help control soil erosion and improve soil fertility."]
+}
+,{"tag":"irrigation_management",
+"patterns": ["How to manage irrigation for my crops?", "How to Manage crops for irrigation?", "How to maintain crops for irrigation?", "manage irrigation?", "irriagtion management?"],
+"responses": ["Understand  crop's water need,Monitor soil moisture,Choose the right irrigation method,Schedule irrigation carefully,Use water efficiently"]
+}
+,{"tag":"organic_fertilizer",
+"patterns": ["What are the most effective organic fertilizers?", "Organic Fertilizer", "Mostly used Organic Fertilizer", "Mostly used fertilizer", "Natural Fertilizer", "What are the most effective Natural Fertilizer?"],
+"responses": ["food waste and yard waste, compost is a rich source of nutrients and can improve soil structure. Animal manure is a good source of nitrogen, phosphorus, and potassium. Seaweed is a good source of micronutrients and can be used as a soil amendment or foliar spray."]
+}
+
+,{"tag":"plant_disease",
+"patterns": ["How to deal with plant diseases in my crops?", "How to overcome the disease in plant?","How to overcome the plant disease in crops?", "How to deal with plant diseases in crops?", "Plant disease, plant disease in crop"],
+"responses": ["The best way to deal with plant diseases is to prevent them from happening in the first place,Early detection,Proper sanitation practices can help prevent the spread of diseases in your crops,There are a number of natural remedies that can be used to treat plant diseases, such as neem oil, garlic oil,In some cases, chemical treatments may be necessary to controlplant diseases."]
+}
+
+,{"tag":"land_for_planting",
+"patterns": ["How to  prepare  land for planting?","Land for planting", "Preparation for planting in land"],
+"responses": ["Clearing the land,Testing the soil,Adding amendment,Tilling the soil,Leveling the land,Creating planting rows or bed,Applying a pre-plant fertilizer,Watering the soil "]
+}
+,{"tag":"profitable_crop",
+"patterns": ["What are the most profitable crops to grow?,profitable crops? Which crops is profitable"],
+"responses": ["Rice,Wheat,Cotton,Sugarcane,Tea,Coffee,Spices ,Vegetables,Oilseeds "]
+}
+,{"tag":"crop_preservation",
+"patterns": [" What are the best post-harvest practices for crop preservation?","post harvest practices?","how to preserve crops after harvesting?","how to preserve crops?"],
+"responses": ["Harvest at the right time, Proper handling of crops,Clean and sanitize the storage area, Sort and grade the quality of crops,Use proper storage,Use proper packaging,Monitor regularly."]
+}
+,{"tag":"maximize_crop_yield",
+"patterns": ["How to maximize my crop yields?","maximum yield", "maximum crop yield", "improve my crop yield"],
+"responses": ["Choose the right crop varieties,Improve soil fertility,Practice proper irrigation,Use appropriate planting methods,Implement pest and disease management,Harvest at the right time"]
+}
+
+,{"tag":"weed_management",
+"patterns": ["How to manage weeds in my crops?","manage weeds in crops","weeds management"],
+"responses": ["Mulching,Manual removal,Chemical control,Crop rotation, Cover crops,Preventative measures."]
+}
+
+,{"tag":"agricultural_machinary",
+"patterns": ["How to choose the right agricultural machinery for  farm?","right agricultural machinery farm","suitable agricultural machinery", "Agricultural machinery for farm", "Agricultural machinery"],
+"responses": ["Farm size,Crop type,Soil type,Labor availability, Budget,After-sales support."]
+}
+,{"tag":"soil_conservation",
+"patterns": ["Some best practices for soil conservation","what are the best practices for soil conservation","best practices for soil conservation", "few best practices for soil conservation", "Write few best practices for soil conservation"],
+"responses": ["Planting cover crops or green manure to add organic matter to the soil,Crop rotation to prevent soil erosion and nutrient depletion,Mulching to help retain soil moisture and prevent erosion,Avoiding overuse of pesticides and synthetic fertilizers that can harm soil health"]
+}
+
+,{"tag":"indentify_and_control_pes",
+"patterns": ["How to identify and control pests in my crops?identify and control pest in crops","identify pest In crops","pest control in crop", "how to identify pest in crop", "how to control pest in crop"],
+"responses": ["Regularly inspect your crops for signs of pest damage, such as holes in leaves or wilting plants,Identify the type of pest that is causing the damage,Choose an appropriate control method, such as using insecticidal sprays, practicing cultural controls like crop rotation or weed control. Monitor the effectiveness of your control measures and make adjustments as necessary."]
+}
+,{"tag":"vertical_farming",
+"patterns": ["Vertical farming,what is vertical farming","meaning for vertical farming", "vertical farming meaning", "what is meant b vertical farming"],
+"responses": ["This involves growing crops in vertically stacked layers using artificial lighting and climate control systems, allowing for year-round cultivation and high-density production in urban areas."]
+}
+,{"tag":"advantages_vertical_Farming",
+"patterns": [" Advantages of vertical farming","what are advantages of vertical farming","benefits of vertical farming"],
+"responses": ["Efficient use of space, Reduced water usage, Year-round crop production,Reduced transportation costs"]
+}
+
+,{"tag":"disadvantages_vertical_farming",
+"patterns": ["disadvantages of vertical farming","what are the disadvantages of vertical farming", "drawbacks of vertical farming"],
+"responses": ["High start-up costs,High Energy usage,Limited crop selection"]
+}
+
+,{"tag":"Crop_selection",
+"patterns": ["factors that determine the crop selection","crop selection factors", "factors for crop selection"],
+"responses": ["crop selection depends on several factors such as soil type, climate, water availability, and market demand"]
+}
+
+
+
+
+
+
+
+
+
+
+]
+}
